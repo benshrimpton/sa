@@ -1,0 +1,54 @@
+/* Search & Filter Styles */
+body
+{
+	display:block;
+}
+.searchandfilter p
+{
+	margin-top: 1em;
+	display:inline-block;
+}
+.searchandfilter ul
+{
+	display:inline-block;
+}
+.searchandfilter li
+{
+	list-style: none;
+	display:inline-block;
+	padding-left: 10px;
+    padding-right: 10px;
+	Height:80px !important;
+}
+
+.postform{
+
+height: 40px;
+text-align: center;
+    width: 300px;
+}
+.searchandfilter input{
+
+height: 40px !important;
+    width: 300px;
+	/*background:#8c734b !important;*/
+}
+/* If in a widget area make a single column by adding display block  */
+.widget-area .searchandfilter li, .widget-area .searchandfilter p
+{
+	display:block;
+}
+.searchandfilter label
+{
+	display:block;
+}
+.searchandfilter h4
+{
+	margin:15px 0;
+	font-size:16px;
+}
+
+.searchandfilter ul > li > ul:not(.children)
+{
+	margin-left:0;
+}
