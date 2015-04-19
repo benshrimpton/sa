@@ -15,9 +15,8 @@ body {
 	font-family: Georgia;
 	margin: 0;
 	padding: 0;
-/*
 	background: url(css/img/SA_Homepage.jpg) no-repeat center top
-*/
+
 }
 img {
 	max-width: 100% !important;
@@ -97,4 +96,9 @@ img {
 	border-bottom: solid 1px;
 	margin-bottom: 40px;
 	padding-bottom: 20px;
+}
+.wp-tag-cloud li  {
+	display: inline-block;
+}
+.wp-tag-cloud li a {
 }

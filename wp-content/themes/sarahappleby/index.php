@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <section class="container">
 	<div class="row">
 		<div class="col-md-8">
@@ -35,13 +36,15 @@
 				<? endwhile; endif; ?>
 				<?php wp_reset_query(); ?>
 		</div>
-		<aside class="col-md-4">
+		
+
+	
+	
+		<?php include 'inc/sidebar.php'; ?>
 			
-			
-			START right sidebar
-			
-			
-		</aside>
+		
+		
+		
 	</div><!-- END ROW -->
 </section>
 
