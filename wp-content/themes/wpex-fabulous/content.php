@@ -36,7 +36,8 @@ else {  ?>
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>">
 					<img src="<?php echo wpex_get_featured_img_url(); ?>" alt="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>" />
 				</a>
-			</div><!-- .post-entry-thumbnail -->
+			</div>
+			<!-- .post-entry-thumbnail -->
 		<?php } ?>
 		<div class="loop-entry-content clr">
 			<header>
@@ -52,7 +53,8 @@ else {  ?>
 				?>
 				</p>
 				</div>
-				<!--<a class="sidebar_cat" title="Category Name" href="http://182.71.22.42/sarah/?cat=18">
+				<!--
+				<a class="sidebar_cat" title="Category Name" href="http://182.71.22.42/sarah/?cat=18">
 				<?php
 				//echo category_listing($id);
 				$title_old = get_the_title();
@@ -68,7 +70,8 @@ else {  ?>
 							$title = $title_old;
 						}
 				?>
-				</a>-->
+				</a>
+				-->
 				<h4>
 					<a title="Category Name" href="" class="home_post_cat"><?php echo $arra_tit[0]; ?></a>
 				</h4>

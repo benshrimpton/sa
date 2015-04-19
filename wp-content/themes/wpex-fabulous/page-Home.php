@@ -149,10 +149,10 @@ get_header(); ?>
 					    else
 					    {
 						
-						if ( function_exists("has_post_thumbnail") && has_post_thumbnail() )
-						{
-						    the_post_thumbnail(array(200,160), array("class" => "post_img"));
-						}
+						if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) {
+						    	//the_post_thumbnail(array(600), array("class" => "post_img"));
+						    	the_post_thumbnail( 'large' );
+							}
 					    }
 					    
 					     ?>
@@ -193,7 +193,8 @@ get_header(); ?>
 			<div class="holder">
 			</div>
 			<div class="clear"></div>
-			<!--<div class="post noborder">
+			<?php /*
+				<div class="post noborder">
 			     <div class="date">
 			      <h1>17</h1>
 					<p>SEPT</p>
@@ -208,7 +209,8 @@ get_header(); ?>
 			<div class="tags">
 			<p>BEAUTY - COLOR - FASHION HAIR - HOW TO INSPIRATION INSPIREME - LIVE-BEAUTY - COLOR - FASHION HAIR - HOW TO INSPIRATION INSPIREME</p>
 			</div>
-			</div>-->
+			</div>
+			*/ ?>
 			</div>
 			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -250,12 +252,14 @@ get_header(); ?>
 					
 		</aside>
 	</div><!-- #primary -->
-	<script>
-	$(document).ready(function(){
+	
+	
+<script>
+$(document).ready(function(){
 	$('.jp-next').click(function(){
-   $("html, body").animate({ scrollTop: 0 }, 500);
- });
- });
- </script>
+		$("html, body").animate({ scrollTop: 0 }, 500);
+	});
+});
+</script>
 	
 <?php get_footer(); ?>

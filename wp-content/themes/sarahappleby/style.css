@@ -1,0 +1,100 @@
+/*-----------------------------------------------------------
+
+ Theme Name: Sarah Appleby
+ Version: 1.0.0
+ Description: Sarah Appleby Theme
+ Author: Ben Shrimpton
+ Author URI: http://shrimpton.agency
+ Tags: Beauty
+
+/* Reset
+================================================== */
+
+
+body {
+	font-family: Georgia;
+	margin: 0;
+	padding: 0;
+/*
+	background: url(css/img/SA_Homepage.jpg) no-repeat center top
+*/
+}
+img {
+	max-width: 100% !important;
+	height: auto !important;
+}
+.logo {
+	width: 342px;
+	height: 36px;
+	background: url(css/img/logo.png) no-repeat center center;
+	position: relative;
+	overflow: hidden;
+	text-indent: -10000px;
+	margin: 0 auto 25px auto;
+}
+.logo a {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.main-header {
+	border-top: solid 10px black;
+	padding: 40px 0;
+}
+.main-nav {
+	text-align: center;
+}
+.main-nav a {
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0 12px;
+}
+.navbar-toggle {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+@media( min-width: 800px ) {
+	
+	.container > .navbar-header,
+	.container-fluid > .navbar-header,
+	.container > .navbar-collapse,
+	.container-fluid > .navbar-collapse {
+		text-align: center
+	}
+	.navbar-nav > li,
+	.navbar-nav {
+		float: none;
+		text-align: center;
+		display: inline-block;
+	}
+
+}
+@media( max-width: 600px ) {
+	.nav > li,
+	.navbar-nav > li,
+	.navbar-nav > li > a {
+		text-align: center;
+	}
+}
+.navbar-toggle {
+	border: none;
+}
+.navbar-toggle .icon-bar {
+	border-radius: 0px;
+	height: 3px;
+	background: black;
+}
+
+.social-links {
+	 font-family: 'Mono Social Icons Font';
+}
+
+.post {
+	border-bottom: solid 1px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
