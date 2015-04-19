@@ -18,11 +18,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
-		
-        <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/fonts.css">
-		<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css">
-        <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/reset.css">
-        <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/style.css">
+	
+        <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         
         
