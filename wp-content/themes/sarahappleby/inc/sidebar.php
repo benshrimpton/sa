@@ -1,5 +1,5 @@
 
-<aside class="col-md-4">
+
 
 <menu class="sudebar-menu">
 	<ul>
@@ -32,4 +32,3 @@
 */
 ); ?>
 <?php wp_tag_cloud( $tagargs ); ?>
-</aside>

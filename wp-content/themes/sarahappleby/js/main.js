@@ -1,6 +1,6 @@
 // @codekit-prepend "bootstrap.min.js"; 
 // @codekit-prepend "royalslider/jquery.royalslider.min.js"; 
-
+// @codekit-prepend "pjax-standalone.min.js"; 
 // Royal slider for homepage
 
 function goRoyalHomepage() {
@@ -55,4 +55,21 @@ function goRoyalHomepage() {
 
 
 
-goRoyalHomepage(); 
+
+
+
+
+function pjaxComplete() {
+	$('#loader').hide();
+	goRoyalHomepage(); 
+}
+
+pjax.connect({
+    'container': 'pjax-content',
+    'beforeSend': function(e) {
+        $('#loader').show();
+    },
+    'complete': function() {
+        pjaxComplete();
+    }
+});

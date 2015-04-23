@@ -1,7 +1,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/main-min.js"></script>
 
+</div><!-- end pjax -->
 
+<div id="loader"></div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
