@@ -1,15 +1,11 @@
-
-
-
 <menu class="sudebar-menu">
 	<ul>
-	<li><a href="/about">WHO IS SARAH?</a></li>
-	<li><a href="/catgeory/use">USE</a></li>
-	<li><a href="/catgeory/work">WORK</a></li>
-	<li><a href="/catgeory/live">LIVE</a></li>
+  	<li><a href="/about/">WHO IS SARAH?</a></li>
+  	<li><a href="/catgeory/use/">USE</a></li>
+  	<li><a href="/catgeory/work/">WORK</a></li>
+  	<li><a href="/catgeory/live/">LIVE</a></li>
 	</ul>
 </menu>
-
 
 <?php $tagargs = array(
 'smallest'                  => '12', 
