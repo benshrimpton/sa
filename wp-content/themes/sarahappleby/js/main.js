@@ -1,11 +1,7 @@
-// @codekit-prepend "bootstrap.min.js"; 
-// @codekit-prepend "royalslider/jquery.royalslider.min.js"; 
-// @codekit-prepend "pjax-standalone.min.js"; 
-// Royal slider for homepage
-
 function goRoyalHomepage() {
 
 if ($('#homepage-gallery').length) {
+  alert(0)
 	var $royalSlider = $('#homepage-gallery');
   $royalSlider.royalSlider({
   	addActiveClass: true,
@@ -63,3 +59,6 @@ pjax.connect({
     pjaxComplete();
   }
 });
+
+
+pjaxComplete(); 
