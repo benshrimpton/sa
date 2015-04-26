@@ -1,7 +1,6 @@
 function goRoyalHomepage() {
 
 if ($('#homepage-gallery').length) {
-  alert(0)
 	var $royalSlider = $('#homepage-gallery');
   $royalSlider.royalSlider({
   	addActiveClass: true,
