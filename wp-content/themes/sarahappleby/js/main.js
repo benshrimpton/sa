@@ -48,6 +48,10 @@ function pjaxComplete() {
   $('#loader').hide();
   goRoyalHomepage(); 
 }
+$(document).on('click', '.toggle-search',function(e){
+  e.preventDefault();
+  $('.search-wrap').toggleClass('open');
+});
 
 pjax.connect({
   'container': 'pjax-content',
@@ -59,5 +63,5 @@ pjax.connect({
   }
 });
 
-
+//call it all on DOM ready
 pjaxComplete(); 

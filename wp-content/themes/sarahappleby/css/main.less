@@ -79,6 +79,15 @@ img {
 }
 .social-links {
 	 font-family: 'Mono Social Icons Font';
+	  a {
+	  	font-size: 30px;
+	  	&:hover  {
+	  		color: inherit;
+	  		border: none;
+	  		text-decoration: none;
+	  		opacity: .6;
+	  	}
+	  }
 }
 .post {
 	border-bottom: solid 1px;
@@ -103,3 +112,43 @@ img {
 	z-index: 9999;
 	display: none;
 }
+.search-wrap {
+ visibility: hidden;
+ opacity: 0;
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: rgba(255, 255, 255, .9);
+ z-index: 45000;
+ form {
+ 	display: block;
+ 	border: solid 1px red;
+ 	margin: 20px;
+ 	input,
+ 	input[type="search"] {
+ 			border: none;
+ 			display: inline-block;
+ 			background: transparent;
+ 			font-size: 2em;
+ 			color: black;
+ 	}
+ 	input[type="submit"] {
+
+ 	}
+ }
+}
+.search-wrap.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
