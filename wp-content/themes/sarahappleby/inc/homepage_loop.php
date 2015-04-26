@@ -2,11 +2,11 @@
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article class="post">
 	<header>
-		<h2><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
+		<h2><a href="<? the_permalink(); ?>" class="pjax"><? the_title(); ?></a></h2>
 		<time><?php the_time('F jS, Y') ?></time>
 	</header>
 	<figure>
-		<a href="<? the_permalink(); ?>">
+		<a href="<? the_permalink(); ?>" class="pjax">
 			<? the_post_thumbnail('large');  ?>
 		</a>
 	</figure>
@@ -14,7 +14,7 @@
 	<?php 
 	$category = get_the_category(); 
 	if($category[0]){
-	echo '<a href="'.get_category_link($category[0]->term_id ).'" class="category-link">'.$category[0]->cat_name.'</a>';
+	echo '<a class="pjax" href="'.get_category_link($category[0]->term_id ).'" class="category-link">'.$category[0]->cat_name.'</a>';
 	}
 	?>
 	</div>		

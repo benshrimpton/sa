@@ -1,8 +1,9 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/bootstrap.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/royalslider/jquery.royalslider.min.js"></script>
+<script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/pjax-standalone.min.js"></script>
-
 <script src="<?php bloginfo( 'template_url' ); ?>/js/main-min.js"></script>
 
 </div><!-- end pjax -->

@@ -24,7 +24,6 @@
 .rsDefault .rsSlide,
 .rsDefault .rsVideoFrameHolder,
 .rsDefault .rsThumbs {
-	background: #151515;
 	color: #FFF;
 }
 
@@ -42,42 +41,40 @@
 	display: block;
 	cursor: pointer;
 	z-index: 21;
+	width: 49%;
 }
 .rsDefault.rsVer .rsArrow {
 	width: 100%;
 	height: 44px;
-	
 }
-.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0; }
-.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0;   }
+.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0;   }
 
-.rsDefault.rsHor .rsArrowLeft { left: 0; top: 0; }
-.rsDefault.rsHor .rsArrowRight { right: 0; top:0; }
+.rsDefault.rsHor .rsArrowLeft { left: 0; top: 0; cursor: url(img/prev.png) 15 30,auto; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top:0; cursor: url(img/next.png) 15 30,auto; }
 
 .rsDefault .rsArrowIcn {		
-	width: 32px;
-	height: 32px;
+	width: 44px;
+	
+	height: 62px;
 	top: 50%;
 	left: 50%;
-	margin-top:-16px;	
-	margin-left: -16px;
-
+	margin-top:-31px;	
+	margin-left: -22px;
 	position: absolute;	
 	cursor: pointer;	
-	background: url('rs-default.png');
-
-	background-color: #000;
-	background-color: rgba(0,0,0,0.75);
-	*background-color: #000;
+	background: url('/css/img/arrows.png') 0 0;
 	
-	border-radius: 2px;
+	display: none !important;
+	
 }
 .rsDefault .rsArrowIcn:hover {
-	background-color: rgba(0,0,0,0.9);
+	/* background-color: rgba(0,0,0,0.9); */
+	
 }
 
-.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
-.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 0; }
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: 0 -62px; }
 
 .rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
 .rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
@@ -142,7 +139,7 @@
 	height: 72px;
 }
 .rsDefault .rsThumbsVer {
-	width: 96px;
+	width: 80px;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -159,8 +156,8 @@
 .rsDefault .rsThumb {
 	float: left;
 	overflow: hidden;
-	width: 96px;
-	height: 72px;
+	width: 80px;
+	height: 80px;
 }
 .rsDefault .rsThumb img {
 	width: 100%;
@@ -228,7 +225,7 @@
 	margin-left: -8px;
 	position: absolute;	
 	cursor: pointer;	
-	background: url('rs-default.png');
+	background: url('/js/vendor/royalslider/skins/default/rs-default.png');
 }
 
 .rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
@@ -350,7 +347,7 @@
 	width: 32px;
 	height: 32px;
 
-	background: url('rs-default.png') 0 0;
+	background: url('/js/vendor/royalslider/skins/default/rs-default.png') 0 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	*background-color: #000;
@@ -393,7 +390,7 @@
 	-moz-transition: .3s;
 	transition: .3s;
 
-	background:url(rs-default.png) no-repeat 0 -32px;
+	background:url('/js/vendor/royalslider/skins/default/rs-default.png') no-repeat 0 -32px;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	*background-color: #000;
@@ -427,7 +424,7 @@
 	margin: 6px;
 	width: 32px;
 	height: 32px;
-	background: url('rs-default.png') -64px 0;
+	background: url('/js/vendor/royalslider/skins/default/rs-default.png') -64px 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	*background-color: #000;
@@ -445,10 +442,10 @@
 ****************/
 
 .rsDefault .rsPreloader {
-	width:20px;
-	height:20px;
-	background-image:url(../preloaders/preloader-white.gif);
-
+	height: 32px;
+    width: 32px;
+	background-image:url('/js/vendor/royalslider/skins/preloaders/preloader-white.gif') no-repeat center center ;
+/* 	background: url(/css/img/spinner32g.gif) no-repeat center center; */
 	left:50%;
 	top:50%;
 	margin-left:-10px;

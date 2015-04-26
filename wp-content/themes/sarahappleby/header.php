@@ -30,6 +30,23 @@
   
 <header class="main-header">
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <menu class="social-links">
+      <a href="/blog" target="_blank">&#xe027;</a>
+      <a href="/blog" target="_blank">&#xe086;</a>
+      <a href="/blog" target="_blank">&#xe100;</a>
+      <a href="/blog" target="_blank">&#xe064;</a>
+      </menu>
+    </div>
+    <div class="col-sm-6 text-right">
+      <div class="toggle-search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </div>
+    </div>
+</div>
+
 <h1 class="logo"><a href="/">Sarah Appleby</a></h1>
 
 <nav class="navbar">
@@ -44,25 +61,23 @@
   </div>
   <div id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/blog" class="pjax">Blog</a></li>
+      <li><a href="/portfolio" class="pjax">Portfolio</a></li>
+      <li><a href="/about" class="pjax">About</a></li>
+      <li><a href="/contact" class="pjax">Contact</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 </nav>
 
 
-<menu class="social-links">
-<a href="/blog" target="_blank">&#xe027;</a>
-<a href="/blog" target="_blank">&#xe086;</a>
-<a href="/blog" target="_blank">&#xe100;</a>
-<a href="/blog" target="_blank">&#xe064;</a>
-</menu>
 
-<a href="#" class="toggle-search">Search</a>
+
+
 <div class="search-wrap">
+<div class="toggle-search search-closer">
+<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+</div>
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
@@ -71,7 +86,7 @@
 
 
 </header>
-<dic id="pjax-content">
+<div id="pjax-content">
 
 
 
