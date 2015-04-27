@@ -30,9 +30,9 @@
   
 <header class="main-header">
 
-<div class="container">
+<div class="container top-row">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-xs-6">
       <menu class="social-links">
       <a href="/blog" target="_blank">&#xe027;</a>
       <a href="/blog" target="_blank">&#xe086;</a>
@@ -40,7 +40,7 @@
       <a href="/blog" target="_blank">&#xe064;</a>
       </menu>
     </div>
-    <div class="col-sm-6 text-right">
+    <div class="col-xs-6 text-right">
       <div class="toggle-search">
         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
       </div>

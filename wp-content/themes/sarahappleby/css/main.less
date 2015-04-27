@@ -19,6 +19,12 @@ a:hover, a:focus, a:active {
 	border: none;
 	color: inherit;
 }
+.top-row {
+	line-height: 60px;
+	@media(max-width: 800px ) {
+		padding:0 30px;
+	}
+}
 .logo {
 	width: 342px;
 	height: 36px;
@@ -34,6 +40,10 @@ a:hover, a:focus, a:active {
 		right: 0;
 		bottom: 0;
 		top: 0;
+	}
+	@media(max-width: 480px ) {
+		width: 98%;
+		background-size: 100%;
 	}
  }
 .main-header {
