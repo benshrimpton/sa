@@ -5,8 +5,9 @@ if ($('#homepage-gallery').length) {
   $royalSlider.royalSlider({
   	addActiveClass: true,
     imageScaleMode: 'fill',
+    autoScaleSlider: true,
     //slidesOrientation: 'vertical',
-    //controlNavigation: 'none',
+    controlNavigation: 'none',
     //imageScalePadding: 40,
     slidesSpacing: 0,
     navigateByClick: false,

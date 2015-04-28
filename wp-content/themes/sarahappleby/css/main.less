@@ -1,4 +1,5 @@
 @import 'fonts';
+@import 'font/stylesheet.css';
 @import 'bootstrap';
 @import 'reset';
 @import '../js/royalslider/royalslider';
@@ -8,8 +9,7 @@ body {
 	font-family: Georgia;
 	margin: 0;
 	padding: 0;
-/*	background: url(img/SA_Homepage.jpg) no-repeat center top
-*/}
+	}
 img {
 	max-width: 100% !important;
 	height: auto !important;
@@ -112,10 +112,34 @@ a:hover, a:focus, a:active {
 .wp-tag-cloud li  {
 	display: inline-block;
 }
+.slide-wrapper {
+	position: relative;
+	margin-bottom: 120px;
+}
+.instgram-feed-wrapper {
+	width: 100%;
+	height: 120px;
+	position: absolute;
+	bottom: -60px;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	.instgram-feed-inner {
+		background: white;
+		min-height: 120px;
+		border-bottom: solid 1px silver;
+	}
+}
 #homepage-gallery {
 	width: 100%;
-	min-height: 500px;
+	height: 400px;
 	background: red;
+	@media(max-width: 800px) {
+		height: 350px;
+	}
+	@media(max-width: 600px) {
+		height: 300px;
+	}
 }
 #loader {
 	position: fixed;
