@@ -14,8 +14,30 @@ $image = $images[0];
 </section>
   <div class="instgram-feed-wrapper">
     <div class="instgram-feed-inner container">
-      <div class="instagram-feed-notice"></div>
-      <div class="instagram-feed-carousel"></div>
+      <div class="instagram-feed-notice">
+        <h3>What Sarah has been up to</h3>
+        <a href="" target"_blank">Follow on Bloglovin</a>
+      </div>
+      <div class="instagram-feed-carousel">
+        <div id="owl-demo">
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

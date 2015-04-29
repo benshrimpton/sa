@@ -19,7 +19,7 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   
   <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/main.css">
-  <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/modernizr.js"></script>
 
   <?php wp_head(); ?>
 </head>

@@ -6,7 +6,7 @@
   	<li><a href="/catgeory/live/">LIVE</a></li>
 	</ul>
 </menu>
-
+<div class="tags-wrap">
 <?php $tagargs = array(
 'smallest'                  => '12', 
 'largest'                   => '12',
@@ -28,3 +28,26 @@
 */
 ); ?>
 <?php wp_tag_cloud( $tagargs ); ?>
+<a href="/tags/">See more tags</a>
+</div>
+
+<div class="blog-lovin-cta">
+  <a hef="">
+    Follow me on Bloglovin
+  </a>
+</div>
+
+<div class="popular-posts">
+  <h3>Popular Posts</h3>
+</div>
+
+<div class="ad-banner sidebar-ad">
+ <a hef="">
+  <img src="http://placehold.it/300x600" class="">
+</a>
+</div>
+
+<div class="follow-on-instagram">
+  <h3>Follow On Instagram<h3>
+    <img src="http://placehold.it/250x250">
+</div>

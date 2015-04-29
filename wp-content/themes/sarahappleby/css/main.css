@@ -6844,6 +6844,69 @@ a:visted {
   border: none;
   color: inherit;
 }
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
 /* v1.0.5 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
 .royalSlider {
@@ -7623,6 +7686,17 @@ a:active {
   margin-bottom: 40px;
   padding-bottom: 20px;
 }
+.post .read-more {
+  display: block;
+  padding: 10px 0;
+}
+.post .post-tags a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: Arial;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
 .wp-tag-cloud li {
   display: inline-block;
 }
@@ -7643,6 +7717,23 @@ a:active {
   background: white;
   min-height: 120px;
   border-bottom: solid 1px silver;
+  position: relative;
+}
+.instgram-feed-wrapper .instagram-feed-notice {
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: silver;
+  width: 170px;
+}
+.instgram-feed-wrapper .instagram-feed-carousel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 170px;
+  background: gray;
+  height: 120px;
 }
 #homepage-gallery {
   width: 100%;
@@ -7783,4 +7874,21 @@ a:active {
   height: 100%;
   background: transparent;
   padding: 0px;
+}
+.sudebar-menu {
+  margin-bottom: 30px;
+}
+.sudebar-menu ul li a {
+  display: block;
+  border-bottom: solid 1px black;
+  padding: 20px 0;
+}
+.tags-wrap ul {
+  line-height: 22px;
+}
+.tags-wrap a {
+  text-decoration: underline;
+  color: gold;
+  text-transform: uppercase;
+  line-height: 130%;
 }

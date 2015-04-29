@@ -1,3 +1,11 @@
+function goOwl(){
+  $("#owl-demo").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 8,
+      navigation:true,
+  });
+}
+
 function goRoyalHomepage() {
 
 if ($('#homepage-gallery').length) {
@@ -74,11 +82,6 @@ function goRoyalFolio() {
       }
   });
 
-  var slider = $royalSlider.data('royalSlider');
-  slider.slides[0].holder.on('rsAfterContentSet', function() {
-    $('#ajax-folio .inner').addClass('loaded');
-  });
-
 } //end function
 
 
@@ -128,6 +131,7 @@ function pjaxComplete() {
   goRoyalHomepage(); 
   goRoyalFolio();
   goMasonry();
+  goOwl();
 }
 pjax.connect({
   'useClass' : 'pjax',
