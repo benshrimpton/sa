@@ -1,9 +1,11 @@
 function goOwl(){
-  $("#owl-demo").owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
-      items : 8,
-      navigation:true,
-  });
+  if ($("#owl-demo").length) {
+    $("#owl-demo").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+        items : 8,
+        navigation:true,
+    });
+  }
 }
 
 function goRoyalHomepage() {
@@ -112,13 +114,14 @@ $(document).on('click', '.folio-thumb a',function(e){
   $('#ajax-folio').fadeIn(200, function(){
     $('#ajax-folio .inner').load(newUrl+' #single-folio', function(){
       goRoyalFolio();
+      $(this).addClass('loaded');
     });
   });
 });
 
 $(document).on('click', '.ajax-folio-closer',function(e){
   $('#ajax-folio').fadeOut(200, function(){
-    $('#ajax-folio .inner').empty();
+    $('#ajax-folio .inner').empty().removeClass('loaded');
   });
  });
 

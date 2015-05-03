@@ -1,16 +1,26 @@
 @import 'fonts';
-@import 'font/stylesheet.css';
 @import 'bootstrap';
 @import 'reset';
 @import 'owlcarousel';
 @import '../js/royalslider/royalslider';
 @import '../js/royalslider/skins/default/rs-default';
+.debug {
+	border: solid 1px #ddd;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+@gold : #8d744c;
 
 body {
-	font-family: Georgia;
+	font-family: 'Conv_Adobe_Caslon_Regular';
 	margin: 0;
 	padding: 0;
-	}
+}
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
 img {
 	max-width: 100% !important;
 	height: auto !important;
@@ -57,12 +67,18 @@ a:hover, a:focus, a:active {
 		text-transform: uppercase;
 		display: inline-block;
 		margin: 0 12px;
+
 	}
 }
 .navbar-toggle {
 	display: block;
 	float: none;
 	margin: 0 auto;
+}
+.navbar-nav > li > a {
+  font-family: 'p22_underground_probold';
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 @media( min-width: 800px ) {
 	.container > .navbar-header,
@@ -106,20 +122,89 @@ a:hover, a:focus, a:active {
 	  }
 }
 .post {
-	border-bottom: solid 1px;
+	border-bottom: solid 1px silver;
 	margin-bottom: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
+	header {
+		margin-bottom: 20px;
+		min-height: 60px;
+		position: relative;		
+		date {
+			text-transform: uppercase;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 60px;
+			width: 60px;
+			font-family: 'p22_undergroundlight';
+			color: @gold;
+			border-right: solid 1px black;
+			margin-right: 20px;
+			.time-day {
+				font-size: 40px;
+				line-height: 44px;
+				display: block;
+				margin-bottom: 3px;
+			}
+			.time-month {
+        font-size: 12px;
+        letter-spacing: 1px;
+			}
+		}
+		.heading {
+  		position: absolute;
+			left: 75px;
+			top: 0;
+		}
+		h3 {
+  		font-family: 'p22_underground_probook';
+  		letter-spacing: 1px;
+  		margin-bottom: 8px;
+		}
+		h2 {
+			font-family: 'Conv_ACaslonPro-Italic';
+			font-size: 1.5em;
+		}
+	}
+	figure {
+  	display: block;
+  	margin: 0 auto 20px auto;
+  	img {
+    	display: block;
+    	margin: 0;
+  	}
+	}
 	.read-more {
-		display: block;
-		padding: 10px 0;
+		display: inline-block;
+		padding: 15px 0 0 0;
+		font-family: 'p22_underground_probold';
+		text-transform: uppercase;
+		font-size: 14px;
+		letter-spacing: 2px;
+		margin-bottom: 15px;
+		border-bottom: solid 1px white;	
+		&:hover {
+  	  border-bottom: solid 1px black;	
+    }
 	}
 	.post-tags {
 		a{
-			text-decoration: underline;
+			text-decoration: none;
 			text-transform: uppercase;
 			font-family: Arial;
 			letter-spacing: 2px;
-			font-size: 11px;
+			font-size: 9px;
+			color: @gold;
+			font-family: 'p22_undergroundlight';
+			border-bottom: solid 1px fade(@gold, 40%);
+			margin: 0 5px 0 0;
+			-webkit-transition: all ease .3s;
+			transition: all ease .3s;
+			&:hover {
+  			color: black;
+  			border-color: black;
+			}
 		}
 	}
 }
@@ -164,7 +249,6 @@ a:hover, a:focus, a:active {
 #homepage-gallery {
 	width: 100%;
 	height: 400px;
-	background: red;
 	@media(max-width: 800px) {
 		height: 350px;
 	}
@@ -178,7 +262,7 @@ a:hover, a:focus, a:active {
 	left:50%;
 	width: 30px;
 	height: 30px;
-	background: red;
+	background: gray;
 	z-index: 9999;
 	display: none;
 }
@@ -256,7 +340,6 @@ a:hover, a:focus, a:active {
 		right: 20px;
 		left: 20px;
 		bottom: 40px;
-		border: solid 1px red;
 		transition: all ease .3s;
 		transform: scale(.5, .5);
 	}
@@ -274,7 +357,7 @@ a:hover, a:focus, a:active {
 	}
 }
 #ajax-folio .inner.loaded{
-transform: scale(1, 1);	
+  transform: scale(1, 1);	
 }
 
 
@@ -289,21 +372,28 @@ transform: scale(1, 1);
 	background: transparent;
 	padding: 0px;
 }
-
-
-.sudebar-menu {
+.right-sidebar {
+  padding-left: 50px;
+}
+.sidebar-menu {
 	margin-bottom: 30px;
+	
+	@media(max-width: 800px) {
+  	
+	}
 	ul {
 		li {
 			a {
 				display: block;
 				border-bottom: solid 1px black;
 				padding: 20px 0;
+				color: black;
+				font-family: 'p22_underground_prodemi';
+				.uppercase;
 			}
 		}
 	}
 }
-
 .tags-wrap {
 	ul {
 		line-height: 22px;
@@ -313,6 +403,9 @@ transform: scale(1, 1);
 		color: gold;
 		text-transform: uppercase;
 		line-height: 130%;
+		font-family: 'p22_underground_probook';
+		color: @gold;
+		font-size: 16px;
 	}
 }
 

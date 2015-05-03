@@ -7,7 +7,7 @@
 		<div class="col-md-8">
 		<?php include 'inc/homepage_loop.php' ; ?>
 		</div>
-		<aside class="col-md-4">
+		<aside class="col-md-4 right-sidebar">
 		<?php include 'inc/sidebar.php'; ?>	
 		</aside>
 	</div><!-- END ROW -->

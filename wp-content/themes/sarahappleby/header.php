@@ -62,7 +62,14 @@
   <div id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
       <li><a href="/blog" class="pjax">Blog</a></li>
-      <li><a href="/portfolio" class="pjax">Portfolio</a></li>
+      <li class="dropdown"><a href="/portfolio" class="pjax dropdown-toggle">Portfolio</a>
+          <ul class="dropdown-menu">
+            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+          </ul>
+      </li>
       <li><a href="/about" class="pjax">About</a></li>
       <li><a href="/contact" class="pjax">Contact</a></li>
     </ul>

@@ -1,4 +1,4 @@
-<menu class="sudebar-menu">
+<menu class="sidebar-menu">
 	<ul>
   	<li><a href="/about/">WHO IS SARAH?</a></li>
   	<li><a href="/catgeory/use/">USE</a></li>

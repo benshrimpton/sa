@@ -12,6 +12,7 @@ $image = $images[0];
 <?php endwhile; endif;  ?>
 <?php wp_reset_query(); ?>
 </section>
+<?php /*
   <div class="instgram-feed-wrapper">
     <div class="instgram-feed-inner container">
       <div class="instagram-feed-notice">
@@ -40,4 +41,5 @@ $image = $images[0];
       </div>
     </div>
   </div>
+  */ ?>
 </section>

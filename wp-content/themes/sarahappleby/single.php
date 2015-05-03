@@ -23,7 +23,7 @@
 	?>
 	</div>
 				
-	<? the_excerpt(); ?>
+	<? the_content(); ?>
 	
 	
 	<p class="author-name-slug"><?php the_author_firstname(); ?> <?php the_author_lastname(); ?></p>
