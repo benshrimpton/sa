@@ -6899,6 +6899,7 @@ a:visted {
   border: none;
   color: inherit;
 }
+/* ########## @end reset ##########  */
 /* 
  * 	Core Owl Carousel CSS File
  *	v1.3.3
@@ -7645,6 +7646,7 @@ body {
 p {
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 16px;
 }
 img {
   max-width: 100% !important;
@@ -7835,6 +7837,36 @@ a:active {
 .post .post-tags a:hover {
   color: black;
   border-color: black;
+}
+.post.post-masonry-item {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+}
+.post.post-masonry-item .inner {
+  border-bottom: solid 1px #ddd;
+}
+.post.post-masonry-item figure {
+  margin: 0;
+  padding: 0;
+}
+.post .read-more.prev-next {
+  display: inline-block;
+  font-size: 11px;
+  border: none;
+  padding: 20px 0 0 0;
+}
+.post .read-more.prev-next:hover {
+  border: none;
+}
+.post .read-more.prev-next a {
+  border-bottom: solid 1px transparent;
+}
+.post .read-more.prev-next a:hover {
+  border-bottom: solid 1px black;
+}
+.post .read-more.prev-next a:last-child {
+  margin-left: 10px;
 }
 .wp-tag-cloud li {
   display: inline-block;
@@ -8037,4 +8069,20 @@ a:active {
   font-family: 'p22_underground_probook';
   color: #8d744c;
   font-size: 16px;
+  letter-spacing: 0.1em;
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+.tags-wrap a:hover {
+  color: rgba(141, 116, 76, 0.5);
+  border-color: rgba(141, 116, 76, 0.5);
+}
+.tags-wrap .see-more-tags {
+  text-decoration: none;
+  border-bottom: solid 1px silver;
+  color: black;
+  padding: 30px 0;
+  display: block;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.1em;
 }

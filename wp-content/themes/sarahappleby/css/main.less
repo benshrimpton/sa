@@ -20,6 +20,7 @@ body {
 p {
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 16px;
 }
 img {
 	max-width: 100% !important;
@@ -207,6 +208,36 @@ a:hover, a:focus, a:active {
 			}
 		}
 	}
+}
+.post.post-masonry-item {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+  .inner {
+    border-bottom: solid 1px #ddd;
+  }
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+}
+.post .read-more.prev-next {
+  display: inline-block;
+  font-size: 11px;
+  border: none;
+  padding: 20px 0 0 0;
+  &:hover {
+    border: none;
+  }
+  a { 
+    border-bottom: solid 1px transparent;
+    &:hover {
+       border-bottom: solid 1px black;
+    }
+  }
+  a:last-child {
+    margin-left: 10px;
+  }
 }
 .wp-tag-cloud li  {
 	display: inline-block;
@@ -406,6 +437,21 @@ a:hover, a:focus, a:active {
 		font-family: 'p22_underground_probook';
 		color: @gold;
 		font-size: 16px;
+		letter-spacing: 0.1em;
+		transition: all ease .3s;
+		&:hover {
+  		color: fade(@gold, 50%);
+  		border-color: fade(@gold, 50%);
+		}
+	}
+	.see-more-tags {
+  	text-decoration: none;
+  	border-bottom:  solid 1px silver;
+  	color: black;
+  	padding: 30px 0;
+  	display: block;
+  	margin: 0 0 30px 0;
+  	letter-spacing: 0.1em;
 	}
 }
 

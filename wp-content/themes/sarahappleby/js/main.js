@@ -96,7 +96,15 @@ function goMasonry(){
     });
   }); 
 }
-
+function goMasonryArticles(){
+  var $container = $("#article-grid");
+  $container.imagesLoaded(function(){
+    $container.masonry({
+      columnWidth: '.post-masonry-item',
+      itemSelector: '.post-masonry-item'
+    });
+  }); 
+}
 
 
 
@@ -134,6 +142,7 @@ function pjaxComplete() {
   goRoyalHomepage(); 
   goRoyalFolio();
   goMasonry();
+  goMasonryArticles();
   goOwl();
 }
 pjax.connect({

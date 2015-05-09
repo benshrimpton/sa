@@ -11,8 +11,7 @@
 'smallest'                  => '12', 
 'largest'                   => '12',
 'unit'                      => 'px', 
-'number'                    => 45,  
-
+'number'                    => 20,  
 'format'                    => 'list',
 /*
 'separator'                 => "\n",
@@ -28,7 +27,7 @@
 */
 ); ?>
 <?php wp_tag_cloud( $tagargs ); ?>
-<a href="/tags/">See more tags</a>
+<a href="/tagged/" class="see-more-tags">See more tags <span>&raquo;</span></a>
 </div>
 
 <div class="blog-lovin-cta">

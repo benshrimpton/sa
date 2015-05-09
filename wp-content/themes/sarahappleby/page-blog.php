@@ -1,12 +1,19 @@
 <?php get_header(); ?>
 
+<section class="container">
+	<div class="row">
+		<div class="col-md-8">
+		<?php include 'inc/homepage_loop.php' ; ?>
 
-<?php query_posts('cat=23,50,16 & posts_per_page=24'); ?>
-<?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<h2><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
 
-<? endwhile; endif; ?>
 
+
+		</div>
+		<aside class="col-md-4 right-sidebar">
+		<?php include 'inc/sidebar.php'; ?>	
+		</aside>
+	</div><!-- END ROW -->
+</section>
 
 <?php get_footer(); ?>

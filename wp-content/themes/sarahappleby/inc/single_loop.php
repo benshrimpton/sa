@@ -1,5 +1,3 @@
-<?php query_posts('cat=23,50,16 & posts_per_page=16'); ?>
-<?php echo paginate_links(); ?>
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article class="post">
 	<header>
@@ -30,11 +28,11 @@
 	</figure>
 	
 	<div class="excertp">
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 		<p class="author-name-slug">
 			<?php the_author_firstname(); ?> <?php the_author_lastname(); ?>
 		</p>
-		<p class="read-more"><a href="<? the_permalink(); ?>" class="pjax">CONTINUE READING</a></p>
+		<p class="read-more"><a href="/blog" class="pjax">BACK TO BLOG</a></p>
 		<div class="post-tags">
 		<?php
 		$posttags = get_the_tags();
@@ -44,12 +42,18 @@
 			}
 		}
 		?>
+		
+    
 	</div>
+
+<p class="read-more prev-next">	
+<?php previous_post_link('%link', 'PREVIOUS' ); ?>
+<?php next_post_link('%link', 'NEXT' ); ?>
+<?php #next_post_link( '%link &rarr;', '%title' ) ?>
+</p>
+    
+    
 	</div>
 </article>	
-    <p class="read-more prev-next">	
-      <?php next_posts_link( 'Older posts' ); ?>
-      <?php previous_posts_link( 'Newer posts' ); ?>
-    </p>
 <? endwhile; endif; ?>
 <?php wp_reset_query(); ?>
