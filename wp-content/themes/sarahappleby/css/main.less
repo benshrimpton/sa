@@ -405,10 +405,10 @@ a:hover, a:focus, a:active {
 }
 .right-sidebar {
   padding-left: 50px;
+  max-width: 270px;
 }
 .sidebar-menu {
 	margin-bottom: 30px;
-	
 	@media(max-width: 800px) {
   	
 	}
@@ -454,9 +454,154 @@ a:hover, a:focus, a:active {
   	letter-spacing: 0.1em;
 	}
 }
+.sidebar-ad {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px silver;
+}
+.blog-lovin-cta {
+  background: black;
+  color: white;
+  font-family: 'p22_underground_probook';
+  padding: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  a {
+    display: block;
+  }
+  .glyphicon {
+    font-size: 40px;
+    display: block;
+    float: left;
+  }
+  span {
+    display: block
+  }
+  .text {
+    padding-left: 10px;
+    float: left;
+    width: 68%;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+}
+.follow-on-instagram {
+  color: @gold;
+  background: white;
+  border: solid 1px @gold;
+  padding: 20px;
+  text-transform: uppercase;
+  a {
+    display: block;
+  }
+  .instagram-icon {
+  font-family: 'Mono Social Icons Font';
+  font-size: 40px;
+  float: left;
+  display: block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  }
+  .clear {
+    height: 10px;
+  }
+  .text {
+    font-family: 'p22_underground_probook';
+    padding-left: 0px;
+    float: left;
+    width: 68%;
+    font-size: 15px;
+  }
+  img {
+    clear: both;
+    display: block;
+    margin: 0px auto;
+  }
+}
+.main-footer {
+  border-top: solid 1px black;
+  padding: 30px;
+  font-family: 'p22_underground_probook';
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: normal
+  }
+  .social-links {
+    font-family: 'Mono Social Icons Font';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      line-height: normal
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+  .footer-logo {
+    width: 108px;
+    height: 129px;
+    background: url(img/footer-logo.jpg) no-repeat 0 0;
+  }
+}
+  
 
-
-
+.folio-thumb {
+  position: relative;
+  margin-bottom: 30px;
+/*
+  padding: 0;
+  margin: 0;
+*/
+  .inner {
+    /*
+    margin: 10px;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    */
+  }
+  figcaption {
+    position: absolute;
+    top:0px;
+    right:5px;
+    bottom: 0px;
+    left: 5px;
+    background: rgba(0,0,0,.8);
+    color: white;
+    transition: opacity ease .3s;
+    opacity: 0;
+    text-align: center;
+    .table {
+      display: table;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+     }
+    .table-cell {
+      display: table-cell;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  &:hover {
+    figcaption {
+      opacity: 1;
+    }
+  }
+}
 
 
 

@@ -1,5 +1,5 @@
 <?php query_posts('cat=23,50,16 & posts_per_page=16'); ?>
-<?php echo paginate_links(); ?>
+
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article class="post">
 	<header>
@@ -47,9 +47,14 @@
 	</div>
 	</div>
 </article>	
+
+<? endwhile; endif; ?>
+
     <p class="read-more prev-next">	
+      <?php echo paginate_links(); ?>
       <?php next_posts_link( 'Older posts' ); ?>
       <?php previous_posts_link( 'Newer posts' ); ?>
     </p>
-<? endwhile; endif; ?>
+    
+    
 <?php wp_reset_query(); ?>

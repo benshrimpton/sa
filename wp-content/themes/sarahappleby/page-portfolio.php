@@ -8,13 +8,21 @@
 	
 	
 	<figure class="col-md-4 folio-thumb">
-	<a href="<? the_permalink(); ?>">
-	
-	<? the_post_thumbnail('large');  ?>
-	
-	<h2><? the_title(); ?></h2>
-	
-	</a>
+  	<div class="inner">
+  
+      <? the_post_thumbnail('large');  ?>
+  	
+    	<figcaption class="meta">
+    	  <a href="<? the_permalink(); ?>">
+    	  <div class="table">
+          <div class="table-cell">
+            <h2><? the_title(); ?></h2>
+          </div>
+    	  </div>
+    		</a>  
+    	</figcaption>
+  
+  	</div>
 	</figure>
 					
 <?php endwhile; endif;  ?>

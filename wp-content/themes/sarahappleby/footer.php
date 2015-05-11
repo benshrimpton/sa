@@ -1,3 +1,29 @@
+<footer class="main-footer container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="footer-logo"></div>
+    </div>
+    <div class="col-md-3">
+      <h4>CONTACT</h4>
+      <p><a href="mailto:SARAH@SARAHAPPLEBY.COM">SARAH@SARAHAPPLEBY.COM</a></p>
+      <p>NE WYORK, NY</p>
+    </div>
+    <div class="col-md-3">
+      <h4>BOOKINGS</h4>
+      <p><a href="mailto:SARAH@SARAHAPPLEBY.COM">SARAH@SARAHAPPLEBY.COM</a></p>
+      <p>NE WYORK, NY</p>
+    </div>
+    <div class="col-md-2">
+      <h4>CONNECT</h4>
+      <ul class="social-links">
+        <li><span>&#xe027;</span> FACEBOOK</li>
+        <li><span>&#xe086;</span> TWITTER</li>
+        <li><span>&#xe100;</span> INSTAGRAM</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/bootstrap.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/royalslider/jquery.royalslider.min.js"></script>
