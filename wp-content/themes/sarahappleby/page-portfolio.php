@@ -15,6 +15,11 @@
       	  <div class="table">
             <div class="table-cell">
               <h2><? the_title(); ?></h2>
+              <menu class="share">
+                  <a href="<? the_permalink(); ?>">SHARE</a>
+                  <a href="<? the_permalink(); ?>">SHARE</a>
+                  <a href="<? the_permalink(); ?>">SHARE</a>
+              </menu>
             </div>
       	  </div>
       		</a>  

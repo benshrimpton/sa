@@ -3,7 +3,7 @@
 
 <section class="container">
   <header class="row text-center page-header">
-    <h1><?php printf( __( 'Tag Archives: %s', 'boilerplate' ), '' . single_tag_title( '', false ) . '' ); ?></h1>
+    <h1 class="tag-heading"><?php printf( __( 'Tag: %s', 'boilerplate' ), '' . single_tag_title( '', false ) . '' ); ?></h1>
   </header>
 	<div class="row" id="article-grid">
 		  <?php include 'inc/tag_loop.php' ; ?>

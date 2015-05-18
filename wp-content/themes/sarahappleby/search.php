@@ -9,19 +9,23 @@
 get_header(); ?>
 
 
-<section id="primary" class="content-area">
-<div id="content" class="site-content" role="main">
 
+<section class="container">
 <?php if ( have_posts() ) : ?>
 
 <?php the_post(); ?>
 
-	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2>
+		<div class="row" id="article-grid">
+  		
+		  <?php include 'inc/tag_loop.php' ; ?>
+		  
+	  </div><!-- END ROW -->
 
 <?php else: ?>   
 
-		<h2 class="text-center">no results</h2>
+		<h2 class="text-center no-results">No Results, try and another word.</h2>
 
 <?php endif; ?>
+</section>
 
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="tags-wrap container">
+<div class="tags-wrap container tags-page-wrap">
 <?php $tagargs = array(
 'smallest'                  => '12', 
 'largest'                   => '12',

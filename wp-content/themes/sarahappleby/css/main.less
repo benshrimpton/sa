@@ -5,7 +5,7 @@
 @import '../js/royalslider/royalslider';
 @import '../js/royalslider/skins/default/rs-default';
 .debug {
-	border: solid 1px #ddd;
+/* 	border: solid 1px #ddd; */
 }
 .transition-medium {
   transition: all ease .3s;
@@ -234,10 +234,6 @@ a:hover, a:focus, a:active {
 			text-transform: uppercase;
 			display: block;
 			position: relative;
-/*
-			top: 0;
-			left: 0;
-*/
 			height: 60px;
 			width: 60px;
 			font-family: 'p22_undergroundlight';
@@ -269,6 +265,9 @@ a:hover, a:focus, a:active {
         top: 0;
         float: right;
         width: 88%;
+        @media(max-width: 480px) {
+          width: 86%;
+        }
 		}
 		h3 {
   		font-family: 'p22_underground_probook';
@@ -332,6 +331,10 @@ a:hover, a:focus, a:active {
   figure {
     margin: 0;
     padding: 0;
+  }
+  img {
+    display: block;
+    margin: 0 auto 20px auto;
   }
 }
 .post .read-more.prev-next {
@@ -448,6 +451,7 @@ a:hover, a:focus, a:active {
  			width: 100%;
  			transition: all ease .3s;
  			transform: translateY(400px);
+ 			font-family: 'p22_underground_probook';
  	}
  	input[type="submit"] {
 			border: none;
@@ -519,9 +523,11 @@ a:hover, a:focus, a:active {
   padding-left: 50px;
   max-width: 270px;
   margin-bottom: 60px;
+  @media(max-width: 1200px) {
+    padding-left: 30px;
+  }
   @media(max-width: 991px) {
     max-width: 100%;
-    .debug;
   }
 }
 .sidebar-menu {
@@ -559,7 +565,11 @@ a:hover, a:focus, a:active {
     margin-right: 5%;
   } 
 }
+.tags-page-wrap {
+  margin-bottom: 120px;
+  }
 .tags-wrap {
+
   @media(max-width: 991px) {
     .debug;
     float: left;
@@ -690,7 +700,7 @@ a:hover, a:focus, a:active {
   font-family: 'p22_underground_probook';
   letter-spacing: .1em;
   @media(max-width: 992px){
-    padding: 30px 5px;
+    padding: 30px 15px;
   }
   p {
     margin: 0;
@@ -737,6 +747,9 @@ a:hover, a:focus, a:active {
   h4 {
     margin-bottom: 5px;
     font-size: 16px;
+  }
+  .footer-col {
+    margin-bottom: 20px;
   }
 }
   
@@ -799,6 +812,55 @@ a:hover, a:focus, a:active {
   }
   .bio-img {
     margin-bottom: 60px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
 
+
+
+.folio-thumb {
+  h2 {
+    font-family: 'p22_underground_probook';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .1em;
+  }
+}
+
+.contact-wrapper {
+  margin: 60px auto;
+  font-size: 16px;
+  p {
+    margin-bottom: 30px;
+      a {
+        text-decoration: underline;
+        color: gray;
+        &:hover {
+          color: silver;
+        }
+      }
+  }
+  h3 {
+    font-family: 'p22_underground_probook';
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+}
+
+.no-results {
+     font-family: 'p22_underground_probook';
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 60px; 
+}
+.tag-heading {
+     font-family: 'p22_underground_probook';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .1em; 
+}
