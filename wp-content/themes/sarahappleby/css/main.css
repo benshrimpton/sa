@@ -7635,6 +7635,10 @@ img.rsImg {
 .debug {
   border: solid 1px #ddd;
 }
+.transition-medium {
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -7667,6 +7671,14 @@ a:active {
     padding: 0 30px;
   }
 }
+.logo-row {
+  border: solid 1px #ddd;
+}
+.top-inner {
+  border: solid 1px #ddd;
+  line-height: 40px;
+  padding: 0 20px;
+}
 .logo {
   width: 342px;
   height: 36px;
@@ -7674,7 +7686,7 @@ a:active {
   position: relative;
   overflow: hidden;
   text-indent: -10000px;
-  margin: 0 auto 25px auto;
+  margin: 10px auto;
 }
 .logo a {
   display: block;
@@ -7693,6 +7705,83 @@ a:active {
 .main-header {
   border-top: solid 10px black;
   padding: 0 0 40px 0;
+}
+/* MAIN MENU IN USE */
+.menu-main-menu-container {
+  text-align: center;
+}
+#menu-main-menu {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'p22_underground_probold';
+  text-transform: uppercase;
+  z-index: 450000;
+  letter-spacing: .2em;
+}
+#menu-main-menu li {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin-left: -8px;
+  line-height: 50px;
+}
+#menu-main-menu li a {
+  display: inline-block;
+  padding: 0 30px;
+  margin-left: -5px;
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+#menu-main-menu li a:hover {
+  color: silver;
+}
+#menu-main-menu li ul {
+  position: absolute;
+  top: 50px;
+  left: -25px;
+  min-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  background: white;
+  z-index: 1;
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px);
+  text-align: left;
+  border-top: solid 5px black;
+}
+#menu-main-menu li ul:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  background: black;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50%;
+}
+#menu-main-menu li ul li {
+  display: block;
+  margin-left: 0px;
+  font-family: 'p22_underground_probook';
+  border: solid 1px #ddd;
+}
+#menu-main-menu li ul li a {
+  display: block;
+  margin-left: 0px;
+}
+#menu-main-menu li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
 }
 .main-nav {
   text-align: center;
@@ -7744,14 +7833,23 @@ a:active {
 .social-links {
   font-family: 'Mono Social Icons Font';
 }
-.social-links a {
+.social-links a span {
   font-size: 30px;
 }
-.social-links a:hover {
+.social-links a span:hover {
   color: inherit;
   border: none;
   text-decoration: none;
   opacity: .6;
+}
+.main-header .social-links a {
+  font-size: 30px;
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+.main-header .social-links a:hover {
+  color: silver;
+  -webkit-font-smoothing: antialiased;
 }
 .post {
   border-bottom: solid 1px silver;
@@ -7766,15 +7864,23 @@ a:active {
 .post header date {
   text-transform: uppercase;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  /*
+			top: 0;
+			left: 0;
+*/
   height: 60px;
   width: 60px;
   font-family: 'p22_undergroundlight';
   color: #8d744c;
   border-right: solid 1px black;
-  margin-right: 20px;
+  float: left;
+}
+@media (max-width: 600px) {
+  .post header date {
+    width: 30px;
+    height: auto;
+  }
 }
 .post header date .time-day {
   font-size: 40px;
@@ -7782,14 +7888,22 @@ a:active {
   display: block;
   margin-bottom: 3px;
 }
+@media (max-width: 600px) {
+  .post header date .time-day {
+    font-size: 20px;
+    line-height: 17px;
+  }
+}
 .post header date .time-month {
   font-size: 12px;
   letter-spacing: 1px;
 }
 .post header .heading {
-  position: absolute;
-  left: 75px;
+  position: relative;
+  /* left: 75px; */
   top: 0;
+  float: right;
+  width: 88%;
 }
 .post header h3 {
   font-family: 'p22_underground_probook';
@@ -7798,7 +7912,11 @@ a:active {
 }
 .post header h2 {
   font-family: 'Conv_ACaslonPro-Italic';
-  font-size: 1.5em;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.post header a:hover {
+  color: #8d744c;
 }
 .post figure {
   display: block;
@@ -7842,9 +7960,6 @@ a:active {
   border-bottom: none;
   padding-bottom: 0px;
   margin-bottom: 30px;
-}
-.post.post-masonry-item .inner {
-  border-bottom: solid 1px #ddd;
 }
 .post.post-masonry-item figure {
   margin: 0;
@@ -7908,17 +8023,12 @@ a:active {
 }
 #homepage-gallery {
   width: 100%;
-  height: 400px;
+  min-height: 300px !important;
 }
-@media (max-width: 800px) {
-  #homepage-gallery {
-    height: 350px;
-  }
-}
-@media (max-width: 600px) {
-  #homepage-gallery {
-    height: 300px;
-  }
+#single-folio {
+  width: 100%;
+  min-height: 400px !important;
+  margin: 0 auto 60px auto;
 }
 #loader {
   position: fixed;
@@ -8047,17 +8157,54 @@ a:active {
 .right-sidebar {
   padding-left: 50px;
   max-width: 270px;
+  margin-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .right-sidebar {
+    max-width: 100%;
+    border: solid 1px #ddd;
+  }
 }
 .sidebar-menu {
   margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .sidebar-menu {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+    border: solid 1px #ddd;
+  }
 }
 .sidebar-menu ul li a {
   display: block;
   border-bottom: solid 1px black;
   padding: 20px 0;
   color: black;
-  font-family: 'p22_underground_prodemi';
+  letter-spacing: .1em;
+  font-family: 'p22_underground_probook';
   text-transform: uppercase;
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+.sidebar-menu ul li a:hover {
+  color: silver;
+  border-color: silver;
+}
+@media (max-width: 991px) {
+  .popular-posts {
+    border: solid 1px #ddd;
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 991px) {
+  .tags-wrap {
+    border: solid 1px #ddd;
+    float: left;
+    width: 45%;
+  }
 }
 .tags-wrap ul {
   line-height: 22px;
@@ -8091,6 +8238,13 @@ a:active {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: solid 1px silver;
+}
+@media (max-width: 991px) {
+  .sidebar-ad {
+    border: solid 1px #ddd;
+    float: left;
+    width: 45%;
+  }
 }
 .blog-lovin-cta {
   background: black;
@@ -8127,6 +8281,12 @@ a:active {
 }
 .follow-on-instagram a {
   display: block;
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+.follow-on-instagram a:hover {
+  color: rgba(141, 116, 76, 0.5);
+  opacity: .7;
 }
 .follow-on-instagram .instagram-icon {
   font-family: 'Mono Social Icons Font';
@@ -8150,22 +8310,49 @@ a:active {
 }
 .follow-on-instagram img {
   clear: both;
-  display: block;
   margin: 0px auto;
+  display: none;
+}
+.follow-on-instagram img:first-of-type {
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .follow-on-instagram img:first-of-type {
+    display: block;
+  }
+  .follow-on-instagram img {
+    display: block;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
 }
 .main-footer {
   border-top: solid 1px black;
   padding: 30px;
   font-family: 'p22_underground_probook';
+  letter-spacing: .1em;
+}
+@media (max-width: 992px) {
+  .main-footer {
+    padding: 30px 5px;
+  }
 }
 .main-footer p {
   margin: 0;
   padding: 0;
   font-size: 12px;
-  line-height: normal;
+  line-height: 24px;
+}
+.main-footer a {
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+.main-footer a:hover {
+  color: silver;
 }
 .main-footer .social-links {
-  font-family: 'Mono Social Icons Font';
   font-size: 12px;
   margin: 0;
   padding: 0;
@@ -8174,14 +8361,29 @@ a:active {
   margin: 0;
   padding: 0;
   line-height: normal;
+  font-family: 'p22_underground_probook';
 }
-.main-footer .social-links span {
+.main-footer .social-links a span {
   font-size: 24px;
+  font-family: 'Mono Social Icons Font';
+}
+@media (max-width: 992px) {
+  .main-footer .footer-logo-wrap {
+    display: none;
+    height: 0px;
+    width: 0px;
+    padding: 0;
+    margin: 0;
+  }
 }
 .main-footer .footer-logo {
   width: 108px;
   height: 129px;
   background: url(img/footer-logo.jpg) no-repeat 0 0;
+}
+.main-footer h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 .folio-thumb {
   position: relative;

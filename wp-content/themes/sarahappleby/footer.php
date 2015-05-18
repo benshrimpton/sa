@@ -1,24 +1,24 @@
 <footer class="main-footer container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-4 col-md-4 footer-logo-wrap">
       <div class="footer-logo"></div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-4 col-md-3">
       <h4>CONTACT</h4>
       <p><a href="mailto:SARAH@SARAHAPPLEBY.COM">SARAH@SARAHAPPLEBY.COM</a></p>
-      <p>NE WYORK, NY</p>
+      <p>NEW YORK, NY</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-4 col-md-3">
       <h4>BOOKINGS</h4>
       <p><a href="mailto:SARAH@SARAHAPPLEBY.COM">SARAH@SARAHAPPLEBY.COM</a></p>
       <p>NE WYORK, NY</p>
     </div>
-    <div class="col-md-2">
+    <div class="col-sm-4 col-md-2">
       <h4>CONNECT</h4>
       <ul class="social-links">
-        <li><span>&#xe027;</span> FACEBOOK</li>
-        <li><span>&#xe086;</span> TWITTER</li>
-        <li><span>&#xe100;</span> INSTAGRAM</li>
+        <li><a href="" target="_blank"><span>&#xe027;</span> FACEBOOK</a></li>
+        <li><a href="" target="_blank"><span>&#xe086;</span> TWITTER</a></li>
+        <li><a href="" target="_blank"><span>&#xe100;</span> INSTAGRAM</a></li>
       </ul>
     </div>
   </div>

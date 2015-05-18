@@ -7,6 +7,9 @@
 .debug {
 	border: solid 1px #ddd;
 }
+.transition-medium {
+  transition: all ease .3s;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -37,6 +40,14 @@ a:hover, a:focus, a:active {
 		padding:0 30px;
 	}
 }
+.logo-row{
+.debug;
+}
+.top-inner {
+  .debug;
+  line-height: 40px;
+  padding: 0 20px;
+}
 .logo {
 	width: 342px;
 	height: 36px;
@@ -44,7 +55,7 @@ a:hover, a:focus, a:active {
 	position: relative;
 	overflow: hidden;
 	text-indent: -10000px;
-	margin: 0 auto 25px auto;
+	margin: 10px auto;
 	a {
 		display: block;
 		position: absolute;
@@ -62,6 +73,85 @@ a:hover, a:focus, a:active {
 	border-top: solid 10px black;
 	padding: 0 0 40px 0;
 }
+
+/* MAIN MENU IN USE */
+.menu-main-menu-container {
+  text-align: center;
+}
+#menu-main-menu {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'p22_underground_probold';
+  text-transform: uppercase;
+  z-index: 450000;
+  letter-spacing: .2em;
+  li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: -8px;
+    line-height: 50px;
+    a {
+      display: inline-block;
+      padding: 0 30px;
+      margin-left: -5px;
+      transition: all ease .3s;
+      &:hover {
+        color: silver;
+      }
+    }
+    ul {
+      position: absolute;
+      top:50px;
+      left: -25px;
+      min-width: 200px;
+      visibility: hidden;
+      opacity: 0;
+      background: white;
+      z-index: 1;
+      transition: all ease .3s;
+      transform: translateY(20px);
+      text-align: left;
+      border-top: solid 5px black;
+      &:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: -10px;
+        background: black;
+        transform: rotate(45deg);
+        left: 50%;
+      }
+      li {
+        display: block;
+        margin-left: 0px;
+        font-family: 'p22_underground_probook';
+        .debug;
+        a{
+          display: block;
+          margin-left: 0px;
+        }
+      }
+    }
+    &:hover {
+       ul {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+       }
+    }
+  }
+}
+
+
+
+
+
+
 .main-nav {
 	text-align: center;
 	a {
@@ -112,7 +202,7 @@ a:hover, a:focus, a:active {
 }
 .social-links {
 	 font-family: 'Mono Social Icons Font';
-	  a {
+	  a span {
 	  	font-size: 30px;
 	  	&:hover  {
 	  		color: inherit;
@@ -121,6 +211,16 @@ a:hover, a:focus, a:active {
 	  		opacity: .6;
 	  	}
 	  }
+}
+.main-header .social-links {
+  a {
+    font-size: 30px;
+    transition: all ease .3s;
+    &:hover {
+      color: silver;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
 }
 .post {
 	border-bottom: solid 1px silver;
@@ -133,20 +233,30 @@ a:hover, a:focus, a:active {
 		date {
 			text-transform: uppercase;
 			display: block;
-			position: absolute;
+			position: relative;
+/*
 			top: 0;
 			left: 0;
+*/
 			height: 60px;
 			width: 60px;
 			font-family: 'p22_undergroundlight';
 			color: @gold;
 			border-right: solid 1px black;
-			margin-right: 20px;
+			float: left;
+				@media(max-width: 600px) {
+  				width: 30px;
+  				height: auto;
+  				}
 			.time-day {
 				font-size: 40px;
 				line-height: 44px;
 				display: block;
 				margin-bottom: 3px;
+				@media(max-width: 600px) {
+  				font-size: 20px;
+  				line-height: 17px;
+				}
 			}
 			.time-month {
         font-size: 12px;
@@ -154,9 +264,11 @@ a:hover, a:focus, a:active {
 			}
 		}
 		.heading {
-  		position: absolute;
-			left: 75px;
-			top: 0;
+        position: relative;
+        /* left: 75px; */
+        top: 0;
+        float: right;
+        width: 88%;
 		}
 		h3 {
   		font-family: 'p22_underground_probook';
@@ -165,7 +277,11 @@ a:hover, a:focus, a:active {
 		}
 		h2 {
 			font-family: 'Conv_ACaslonPro-Italic';
-			font-size: 1.5em;
+			font-size: 2em;
+			margin-bottom: 20px;
+		}
+		a:hover {
+  		color: @gold;
 		}
 	}
 	figure {
@@ -213,9 +329,6 @@ a:hover, a:focus, a:active {
   border-bottom: none;
   padding-bottom: 0px;
   margin-bottom: 30px;
-  .inner {
-    border-bottom: solid 1px #ddd;
-  }
   figure {
     margin: 0;
     padding: 0;
@@ -279,13 +392,12 @@ a:hover, a:focus, a:active {
 }
 #homepage-gallery {
 	width: 100%;
-	height: 400px;
-	@media(max-width: 800px) {
-		height: 350px;
-	}
-	@media(max-width: 600px) {
-		height: 300px;
-	}
+	min-height: 300px !important;
+}
+#single-folio {
+  width: 100%;
+  min-height: 400px !important;
+  margin: 0 auto 60px auto;
 }
 #loader {
 	position: fixed;
@@ -406,11 +518,19 @@ a:hover, a:focus, a:active {
 .right-sidebar {
   padding-left: 50px;
   max-width: 270px;
+  margin-bottom: 60px;
+  @media(max-width: 991px) {
+    max-width: 100%;
+    .debug;
+  }
 }
 .sidebar-menu {
 	margin-bottom: 30px;
-	@media(max-width: 800px) {
-  	
+	@media(max-width: 991px) {
+  	width: 45%;
+  	float: left;
+  	margin-right: 5%;
+  	.debug;
 	}
 	ul {
 		li {
@@ -419,13 +539,32 @@ a:hover, a:focus, a:active {
 				border-bottom: solid 1px black;
 				padding: 20px 0;
 				color: black;
-				font-family: 'p22_underground_prodemi';
+				letter-spacing: .1em;
+				font-family: 'p22_underground_probook';
 				.uppercase;
+				.transition-medium;
+				&:hover {
+  				color: silver;
+  				border-color: silver;
+				}
 			}
 		}
 	}
 }
+.popular-posts {
+  @media(max-width: 991px) {
+    .debug;
+    float: left;
+    width: 45%; 
+    margin-right: 5%;
+  } 
+}
 .tags-wrap {
+  @media(max-width: 991px) {
+    .debug;
+    float: left;
+    width: 45%; 
+  }
 	ul {
 		line-height: 22px;
 	}
@@ -458,6 +597,11 @@ a:hover, a:focus, a:active {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: solid 1px silver;
+  @media(max-width: 991px) {
+    .debug;
+    float: left;
+    width: 45%; 
+  } 
 }
 .blog-lovin-cta {
   background: black;
@@ -493,6 +637,11 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
   a {
     display: block;
+    .transition-medium;
+    &:hover {
+      color: fade(@gold, 50%);
+       opacity: .7;
+    }
   }
   .instagram-icon {
   font-family: 'Mono Social Icons Font';
@@ -516,38 +665,78 @@ a:hover, a:focus, a:active {
   }
   img {
     clear: both;
-    display: block;
     margin: 0px auto;
+    display: none;
+  }
+  img:first-of-type {
+    display: inline-block;
+  }
+  @media(max-width: 991px) {
+    img:first-of-type {
+      display: block;
+    }
+    img {
+      display: block;
+      width: 20%;
+      margin: 0;
+      padding: 0;
+      float: left;
+    }
   }
 }
 .main-footer {
   border-top: solid 1px black;
   padding: 30px;
   font-family: 'p22_underground_probook';
+  letter-spacing: .1em;
+  @media(max-width: 992px){
+    padding: 30px 5px;
+  }
   p {
     margin: 0;
     padding: 0;
     font-size: 12px;
-    line-height: normal
+    line-height:24px;
+  }
+  a {
+    transition: all ease .3s;
+  }
+  a:hover {
+    color: silver;
   }
   .social-links {
-    font-family: 'Mono Social Icons Font';
+   
     font-size: 12px;
     margin: 0;
     padding: 0;
     li {
       margin: 0;
       padding: 0;
-      line-height: normal
+      line-height: normal;
+      font-family: 'p22_underground_probook';
     }
-    span {
+    a span {
       font-size: 24px;
+      font-family: 'Mono Social Icons Font';
+    }
+  }
+  .footer-logo-wrap {
+    @media(max-width: 992px){
+      display: none;
+      height: 0px;
+      width: 0px;
+      padding: 0;
+      margin: 0;
     }
   }
   .footer-logo {
     width: 108px;
     height: 129px;
     background: url(img/footer-logo.jpg) no-repeat 0 0;
+  }
+  h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
   }
 }
   

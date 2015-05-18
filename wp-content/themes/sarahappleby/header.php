@@ -29,53 +29,53 @@
 <![endif]-->
   
 <header class="main-header">
-
-<div class="container top-row">
-  <div class="row">
-    <div class="col-xs-6">
-      <menu class="social-links">
-      <a href="/blog" target="_blank">&#xe027;</a>
-      <a href="/blog" target="_blank">&#xe086;</a>
-      <a href="/blog" target="_blank">&#xe100;</a>
-      <a href="/blog" target="_blank">&#xe064;</a>
+<div class="container-fluid top-row">
+  
+  <div class="row top-inner">
+    
+      <menu class="social-links pull-left">
+        <a href="/blog" target="_blank">&#xe027;</a>
+        <a href="/blog" target="_blank">&#xe086;</a>
+        <a href="/blog" target="_blank">&#xe100;</a>
+        <a href="/blog" target="_blank">&#xe064;</a>
       </menu>
-    </div>
-    <div class="col-xs-6 text-right">
-      <div class="toggle-search">
+      
+      <div class="toggle-search pull-right">
         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
       </div>
-    </div>
-</div>
-
-<h1 class="logo"><a href="/">Sarah Appleby</a></h1>
-
-<nav class="navbar">
-<div class="container">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+      
   </div>
-  <div id="navbar" class="collapse navbar-collapse">
-    <ul class="nav navbar-nav">
-      <li><a href="/blog" class="pjax">Blog</a></li>
-      <li class="dropdown"><a href="/portfolio" class="pjax dropdown-toggle">Portfolio</a>
-          <ul class="dropdown-menu">
-            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
-            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
-            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
-            <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
-          </ul>
-      </li>
-      <li><a href="/about" class="pjax">About</a></li>
-      <li><a href="/contact" class="pjax">Contact</a></li>
-    </ul>
-  </div><!--/.nav-collapse -->
+      
+    
+  <div class="row logo-row">
+    <h1 class="logo"><a href="/">Sarah Appleby</a></h1>
+  </div>
+  
+    
 </div>
-</nav>
+
+
+<div class="row">
+<!--
+<ul class="nav navbar-nav">
+  <li><a href="/blog" class="pjax">Blog</a></li>
+  <li class="dropdown"><a href="/portfolio" class="pjax dropdown-toggle">Portfolio</a>
+      <ul class="dropdown-menu">
+        <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+        <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+        <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+        <li><a href="/portfolio/" class="pjax">Portfolio 2</a></li>
+      </ul>
+  </li>
+  <li><a href="/about" class="pjax">About</a></li>
+  <li><a href="/contact" class="pjax">Contact</a></li>
+</ul>
+-->
+<?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?>
+</div>
+ 
+</div>
+</header>
 
 
 

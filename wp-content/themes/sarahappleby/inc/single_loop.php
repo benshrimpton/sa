@@ -43,16 +43,14 @@
 		}
 		?>
 		
-    
 	</div>
 
-<p class="read-more prev-next">	
-<?php previous_post_link('%link', 'PREVIOUS' ); ?>
-<?php next_post_link('%link', 'NEXT' ); ?>
-<?php #next_post_link( '%link &rarr;', '%title' ) ?>
-</p>
-    
-    
+  <p class="read-more prev-next">	
+  <?php previous_post_link('%link', 'PREVIOUS' ); ?>
+  <?php next_post_link('%link', 'NEXT' ); ?>
+  <?php #next_post_link( '%link &rarr;', '%title' ) ?>
+  </p>
+     
 	</div>
 </article>	
 <? endwhile; endif; ?>

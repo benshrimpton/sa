@@ -7,15 +7,35 @@ function goOwl(){
     });
   }
 }
+function resizeHomeSlide() {
+  if ($('#homepage-gallery').length) {
+    var theWidth = $('#homepage-gallery').width();
+    var theHeight = theWidth / 3;
+    $('#homepage-gallery').height(theHeight);
+  } 
+}
+function resizeMainFolio() {
+  if ( $('#single-folio').length ) {
+    var pageHeight = $(window).height();
+    var headHeight = $('.main-header').height() + 60;
+    var dif = pageHeight - headHeight;
+    console.log(pageHeight,headHeight,dif)
+    $('#single-folio').height(dif);
+  } 
+}
+
+
+
 
 function goRoyalHomepage() {
 
 if ($('#homepage-gallery').length) {
+  resizeHomeSlide();
 	var $royalSlider = $('#homepage-gallery');
   $royalSlider.royalSlider({
   	addActiveClass: true,
     imageScaleMode: 'fill',
-    autoScaleSlider: true,
+    //autoScaleSlider: true,
     //slidesOrientation: 'vertical',
     controlNavigation: 'none',
     //imageScalePadding: 40,
@@ -40,16 +60,10 @@ if ($('#homepage-gallery').length) {
   });
   var slider = $royalSlider.data('royalSlider');
   slider.ev.on('rsAfterSlideChange', function(event) {
-  	// triggers after slide change
-  	var tone = $('.rsActiveSlide > .slide').data('tone');
-  	console.log("changed", tone);
-  	$('.header').attr('id',tone);
+    console.log("rsAfterSlideChange")
   });
   slider.slides[0].holder.on('rsAfterContentSet', function() {
-    // fires when first slide content is loaded and added to DOM
-    var tone = $('.rsActiveSlide > .slide').data('tone');
-    console.log(tone);
-    $('body').attr('id',tone);
+    console.log("rsAfterContentSet")
   });
  }//end if
 } //end function
@@ -57,6 +71,7 @@ if ($('#homepage-gallery').length) {
 
 
 function goRoyalFolio() {
+  resizeMainFolio();
   var $royalSlider = $('#single-folio');
   $royalSlider.royalSlider({
     addActiveClass: true,
@@ -133,7 +148,10 @@ $(document).on('click', '.ajax-folio-closer',function(e){
   });
  });
 
-
+$(window).on('resize', function(){
+   resizeHomeSlide();
+   resizeMainFolio();
+});
 
 // PJAX COMPLETE
 

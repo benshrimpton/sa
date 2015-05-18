@@ -30,6 +30,8 @@
 <a href="/tagged/" class="see-more-tags">See more tags <span>&raquo;</span></a>
 </div>
 
+<div class="clear"></div>
+
 <div class="blog-lovin-cta">
   <a href="http://bloglovin.com" target="_blank">
     <span class="icon glyphicon glyphicon-plus-sign"></span>
@@ -48,11 +50,21 @@
 </a>
 </div>
 
+<div class="clear"></div>
+
 <div class="follow-on-instagram">
   <a href="https://instagram.com/oksarahappleby/" target="_blank">
     <span class="instagram-icon">&#xe300;</span>
     <span class="text">Follow On Instagram</span>
     <div class="clear"></div>
     <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
+    <div class="clear"></div>
   </a>
 </div>
