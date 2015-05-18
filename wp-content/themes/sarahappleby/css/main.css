@@ -8434,3 +8434,12 @@ a:active {
 .folio-thumb:hover figcaption {
   opacity: 1;
 }
+/* BIOGRAPHY */
+.bio-text {
+  max-width: 640px;
+  margin-bottom: 60px;
+  text-align: justify;
+}
+.bio-img {
+  margin-bottom: 60px;
+}
