@@ -1,3 +1,11 @@
+function clearEmptySpans() {
+  $('span').each(function() {
+    var $this = $(this);
+    if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+        $this.remove();
+});
+}
+
 function goOwl(){
   if ($("#owl-demo").length) {
     $("#owl-demo").owlCarousel({
@@ -202,6 +210,7 @@ function pjaxComplete() {
   goMasonryArticles();
   goOwl();
   goRoyalFolio();
+  clearEmptySpans();
 }
 pjax.connect({
   'useClass' : 'pjax',

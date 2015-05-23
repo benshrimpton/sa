@@ -19,6 +19,7 @@ body {
 	font-family: 'Conv_Adobe_Caslon_Regular';
 	margin: 0;
 	padding: 0;
+	background: url(img/sa-header.jpg) no-repeat center top;
 }
 p {
   font-size: 16px;
@@ -41,11 +42,11 @@ a:hover, a:focus, a:active {
 	}
 }
 .logo-row{
-.debug;
+  .debug;
 }
 .top-inner {
   .debug;
-  line-height: 40px;
+  line-height: 35px;
   padding: 0 20px;
 }
 .logo {
@@ -55,7 +56,7 @@ a:hover, a:focus, a:active {
 	position: relative;
 	overflow: hidden;
 	text-indent: -10000px;
-	margin: 10px auto;
+	margin: 0px auto 24px auto;
 	a {
 		display: block;
 		position: absolute;
@@ -82,7 +83,9 @@ a:hover, a:focus, a:active {
   display: inline-block;
   text-align: center;
   margin: 0 auto;
-  font-family: 'p22_underground_probold';
+/*   font-family: 'p22_underground_probold'; */
+/*   font-family: 'p22_underground_probook'; */
+  font-family: 'p22_underground_proregular';
   text-transform: uppercase;
   z-index: 450000;
   letter-spacing: .2em;
@@ -113,28 +116,37 @@ a:hover, a:focus, a:active {
       transition: all ease .3s;
       transform: translateY(20px);
       text-align: left;
-      border-top: solid 5px black;
+      border: solid 1px @gold;
       &:before {
         content: "";
-        width: 8px;
-        height: 8px;
+        width: 20px;
+        height: 20px;
         display: block;
         position: absolute;
-        left: 50%;
-        top: -10px;
-        background: black;
+        top: -11px;
+        background: white;
         transform: rotate(45deg);
         left: 50%;
+        border: none;
+        margin: 0 0 0 -10px;
+        border-left: solid 1px fade(@gold, 90%);
+        border-top: solid 1px fade(@gold, 90%);
       }
       li {
         display: block;
         margin-left: 0px;
         font-family: 'p22_underground_probook';
-        .debug;
+        line-height: 40px;
         a{
           display: block;
           margin-left: 0px;
         }
+      }
+      li:first-child a {
+          margin-top: 10px;
+      }
+      li:last-child a {
+        margin-bottom: 10px;
       }
     }
     &:hover {
@@ -202,6 +214,7 @@ a:hover, a:focus, a:active {
 }
 .social-links {
 	 font-family: 'Mono Social Icons Font';
+	  -webkit-font-smoothing: antialiased;
 	  a span {
 	  	font-size: 30px;
 	  	&:hover  {
@@ -228,27 +241,30 @@ a:hover, a:focus, a:active {
 	padding-bottom: 30px;
 	header {
 		margin-bottom: 20px;
-		min-height: 60px;
-		position: relative;		
-		date {
-			text-transform: uppercase;
-			display: block;
-			position: relative;
-			height: 60px;
-			width: 60px;
-			font-family: 'p22_undergroundlight';
-			color: @gold;
-			border-right: solid 1px black;
-			float: left;
-				@media(max-width: 600px) {
-  				width: 30px;
-  				height: auto;
-  				}
+		min-height: 70px;
+		position: relative;	
+/* 		border: solid 1px red	; */
+/* 		background: url(img/header.jpg) no-repeat 0 0; */
+		time {
+      text-transform: uppercase;
+      display: block;
+      position: relative;
+      height: 47px;
+      width: 49px;
+      font-family: 'p22_undergroundlight';
+      color: @gold;
+      border-right: solid 1px @gold;
+      float: left;
+        @media(max-width: 600px) {
+          width: 30px;
+          height: auto;
+        }
 			.time-day {
 				font-size: 40px;
-				line-height: 44px;
+				line-height: 35px;
 				display: block;
-				margin-bottom: 3px;
+				letter-spacing: -2px;
+				 -webkit-font-smoothing: antialiased;
 				@media(max-width: 600px) {
   				font-size: 20px;
   				line-height: 17px;
@@ -261,7 +277,6 @@ a:hover, a:focus, a:active {
 		}
 		.heading {
         position: relative;
-        /* left: 75px; */
         top: 0;
         float: right;
         width: 88%;
@@ -269,15 +284,21 @@ a:hover, a:focus, a:active {
           width: 86%;
         }
 		}
-		h3 {
-  		font-family: 'p22_underground_probook';
-  		letter-spacing: 1px;
-  		margin-bottom: 8px;
+		.sub-title {
+      font-family: 'p22_underground_probook';
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      display: block;
+      line-height: 21px;
 		}
 		h2 {
-			font-family: 'Conv_ACaslonPro-Italic';
-			font-size: 2em;
-			margin-bottom: 20px;
+        font-family: 'Conv_ACaslonPro-Italic';
+        font-size: 22px;
+        margin-bottom: 20px;
+        -webkit-font-smoothing: antialiased;
+        line-height: 25px;
+        margin-left: -3px;
+        line-height: 25px;
 		}
 		a:hover {
   		color: @gold;
@@ -758,7 +779,9 @@ a:hover, a:focus, a:active {
   position: relative;
   margin-bottom: 30px;
   .inner {
- 
+    img {
+      display: block;
+    }
   }
   figcaption {
     position: absolute;
@@ -856,4 +879,16 @@ a:hover, a:focus, a:active {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: .1em; 
+}
+
+.share {
+  font-family: 'Mono Social Icons Font';
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  a {
+    
+  }
+  a:hover {
+    color: silver;
+  }
 }

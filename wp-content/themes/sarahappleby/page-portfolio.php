@@ -16,9 +16,9 @@
             <div class="table-cell">
               <h2><? the_title(); ?></h2>
               <menu class="share">
-                  <a href="<? the_permalink(); ?>">SHARE</a>
-                  <a href="<? the_permalink(); ?>">SHARE</a>
-                  <a href="<? the_permalink(); ?>">SHARE</a>
+                <a href="http://www.facebook.com/sharer.php?u=<? the_permalink(); ?>" target="_blank">&#xe027;</a>
+                <a href="http://twitter.com/share?url=<? the_permalink(); ?>&text=<? the_title(); ?>"  target="_blank">&#xe086;</a>
+                <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">&#xe064;</a>
               </menu>
             </div>
       	  </div>

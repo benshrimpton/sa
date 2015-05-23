@@ -3,15 +3,13 @@
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article class="post">
 	<header>
-		<date date-time="<?php the_time('d:M:y'); ?>">
+		<time date-time="<?php the_time('d:M:y'); ?>">
 			<span class="time-day"><?php the_time('d'); ?></span>
 			<span class="time-month"><?php the_time('M'); ?></span>
-		</date>
+		</time>
 		
 		<div class="heading">
-		  <? if ( the_field('sub_title') ): ?>
-        <h3><? the_field('sub_title'); ?></h3>
-      <? endif; ?>
+        <span class="sub-title"><? the_field('sub_title'); ?></span>
       <h2><a href="<? the_permalink(); ?>" class="pjax"><? the_title(); ?></a></h2>
 		</div>
     <?php /* 
