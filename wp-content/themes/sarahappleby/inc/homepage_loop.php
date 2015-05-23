@@ -9,7 +9,9 @@
 		</date>
 		
 		<div class="heading">
-		  <h3><? the_field('sub_title'); ?></h3>
+		  <? if ( the_field('sub_title') ): ?>
+        <h3><? the_field('sub_title'); ?></h3>
+      <? endif; ?>
       <h2><a href="<? the_permalink(); ?>" class="pjax"><? the_title(); ?></a></h2>
 		</div>
     <?php /* 

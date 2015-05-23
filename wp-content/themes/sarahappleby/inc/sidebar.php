@@ -1,9 +1,9 @@
 <menu class="sidebar-menu">
 	<ul>
-  	<li><a href="/about/">WHO IS SARAH?</a></li>
-  	<li><a href="/catgeory/use/">USE</a></li>
-  	<li><a href="/catgeory/work/">WORK</a></li>
-  	<li><a href="/catgeory/live/">LIVE</a></li>
+  	<li><a href="/bio/">WHO IS SARAH?</a></li>
+  	<li><a href="/category/use/">USE</a></li>
+  	<li><a href="/category/work/">WORK</a></li>
+  	<li><a href="/category/live/">LIVE</a></li>
 	</ul>
 </menu>
 <div class="tags-wrap">

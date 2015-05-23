@@ -8124,8 +8124,8 @@ a:active {
   position: absolute;
   top: 40px;
   right: 20px;
-  left: 20px;
-  bottom: 40px;
+  left: 0px;
+  bottom: 0px;
   -webkit-transition: all ease .3s;
           transition: all ease .3s;
   -webkit-transform: scale(0.5, 0.5);
@@ -8404,33 +8404,21 @@ a:active {
 .folio-thumb {
   position: relative;
   margin-bottom: 30px;
-  /*
-  padding: 0;
-  margin: 0;
-*/
-}
-.folio-thumb .inner {
-  /*
-    margin: 10px;
-    position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    */
 }
 .folio-thumb figcaption {
   position: absolute;
-  top: 0px;
-  right: 5px;
+  top: 50%;
+  right: 50%;
   bottom: 0px;
-  left: 5px;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
+  left: auto;
+  background: rgba(255, 255, 255, 0.8);
   -webkit-transition: opacity ease .3s;
-          transition: opacity ease .3s;
+  transition: opacity ease .3s;
   opacity: 0;
   text-align: center;
+  width: 70%;
+  height: 70%;
+  margin: -35% -35% 0 0;
 }
 .folio-thumb figcaption .table {
   display: table;
@@ -8450,7 +8438,7 @@ a:active {
 .folio-thumb:hover figcaption {
   opacity: 1;
 }
-/* BIOGRAPHY */
+/* ############# BIOGRAPHY ############# */
 .bio-text {
   max-width: 640px;
   margin-bottom: 60px;
