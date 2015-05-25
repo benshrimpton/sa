@@ -1,4 +1,6 @@
-<?php query_posts('cat=23,50,16 & posts_per_page=16'); ?>
+<?php
+query_posts('cat=23,50,16 & posts_per_page=3');
+?>
 
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article class="post">
@@ -34,7 +36,7 @@
 		<p class="author-name-slug">
 			<?php the_author_firstname(); ?> <?php the_author_lastname(); ?>
 		</p>
-		<p class="read-more"><a href="<? the_permalink(); ?>" class="pjax">CONTINUE READING</a></p>
+		<p class="read-more"><a href="<? the_permalink(); ?>" class="pjax">CONTINUE READING &raquo;</a></p>
 		<div class="post-tags">
 		<?php
 		$posttags = get_the_tags();
@@ -51,7 +53,7 @@
 <? endwhile; endif; ?>
 
     <p class="read-more prev-next">	
-      <?php echo paginate_links(); ?>
+      <?php //echo paginate_links(); ?>
       <?php next_posts_link( 'Older posts' ); ?>
       <?php previous_posts_link( 'Newer posts' ); ?>
     </p>

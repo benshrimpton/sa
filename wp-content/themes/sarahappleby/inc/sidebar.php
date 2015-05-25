@@ -7,6 +7,7 @@
 	</ul>
 </menu>
 <div class="tags-wrap">
+  <h3>TAGS</h3>
 <?php $tagargs = array(
 'smallest'                  => '12', 
 'largest'                   => '12',
@@ -34,14 +35,27 @@
 
 <div class="blog-lovin-cta">
   <a href="http://bloglovin.com" target="_blank">
-    <span class="icon glyphicon glyphicon-plus-sign"></span>
-    <span class="text">Follow me on Bloglovin</span>
+    <span class="icon glyphicon glyphicon-plus-sign"><span>PLUS</span></span>
+    <span class="text">Follow me<br> on Bloglovin</span>
     <div class="clear"></div>
   </a>
 </div>
 
 <div class="popular-posts">
   <h3>Popular Posts</h3>
+  <?php
+  query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC');
+  ?>
+  <?php while(have_posts()) : the_post(); ?>
+  <article>
+    <a href="<? the_permalink(); ?>" class="pjax">
+      <?php the_post_thumbnail(); ?>
+      <h4><?php the_title(); ?></h4>
+      <p class="read-more">CONTINUE READING &raquo;</p>
+    </a>
+  </article>
+  <?php endwhile; ?>
+  <?php wp_reset_query(); ?>
 </div>
 
 <div class="ad-banner sidebar-ad">

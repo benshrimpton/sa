@@ -30,6 +30,7 @@
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/masonry.pkgd.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/owl.carousel.min.js"></script>
+<script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/jquery.waitforimages.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/pjax-standalone.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/main.js"></script>
 

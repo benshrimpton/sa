@@ -1,3 +1,16 @@
+//add bkg image support
+$.waitForImages.hasImgProperties = ['backgroundImage'];
+
+function fadeBkgImg(){
+  var imgWrap = $('.bio-img');
+  imgWrap.waitForImages(function(){
+    console.log("loaded");
+    $(this).css({
+      'opacity':'1'
+    })
+  });
+}
+
 function clearEmptySpans() {
   $('span').each(function() {
     var $this = $(this);
@@ -19,8 +32,8 @@ function resizeHomeSlide() {
   console.log("resizeHomeSlide")
   if ($('#homepage-gallery').length) {
     var theWidth = $('#homepage-gallery').width();
-    var theHeight = theWidth / 3;
-    $('#homepage-gallery').height(theHeight);
+    var theHeight = theWidth / 2.4;
+    $('#homepage-gallery').height(theHeight).css('border', 'solid 2px black');
   } 
 }
 function resizeMainFolioAjax() {
@@ -211,6 +224,7 @@ function pjaxComplete() {
   goOwl();
   goRoyalFolio();
   clearEmptySpans();
+  fadeBkgImg();
 }
 pjax.connect({
   'useClass' : 'pjax',

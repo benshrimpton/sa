@@ -3,7 +3,7 @@
 <section class="container">
   <header class="row text-center page-header">
     <h1 class="tag-heading">
-      cat title
+      <?php single_cat_title('',true); ?>
     </h1>
   </header>
   <div class="row" id="article-grid">

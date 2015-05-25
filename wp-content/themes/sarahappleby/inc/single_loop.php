@@ -1,4 +1,4 @@
-<?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); observePostViews(get_the_ID()); ?>
 <article class="post">
 	<header>
 		<time date-time="<?php the_time('d:M:y'); ?>">
@@ -7,13 +7,11 @@
 		</time>
 		<div class="heading">
       <span class="sub-title"><? the_field('sub_title'); ?></span>
-      <h2><a href="<? the_permalink(); ?>" class="pjax"><? the_title(); ?></a></h2>
+      <h2><? the_title(); ?></h2>
 		</div>
 	</header>
 	<figure>
-		<a href="<? the_permalink(); ?>" class="pjax">
-			<? the_post_thumbnail('large');  ?>
-		</a>
+		<? the_post_thumbnail('large');  ?>
 	</figure>
 	
 	<div class="excertp">
@@ -21,7 +19,7 @@
 		<p class="author-name-slug">
 			<?php the_author_firstname(); ?> <?php the_author_lastname(); ?>
 		</p>
-		<p class="read-more"><a href="/blog" class="pjax">BACK TO BLOG</a></p>
+		<p class="read-more"><a href="/blog" class="pjax">&laquo; BACK TO BLOG</a></p>
 		<div class="post-tags">
 		<?php
 		$posttags = get_the_tags();

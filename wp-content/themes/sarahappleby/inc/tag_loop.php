@@ -2,7 +2,7 @@
 <article class="post col-sm-4 post-masonry-item">
   <div class="inner">
     <header>
-      <h3><? the_field('sub_title'); ?></h3>
+      <span class="sub-title"><? the_field('sub_title'); ?></span>
       <h2><a href="<? the_permalink(); ?>" class="pjax"><? the_title(); ?></a></h2>
     </header>
   	<figure>
