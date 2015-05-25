@@ -1,5 +1,5 @@
 <?php
-query_posts('cat=23,50,16 & posts_per_page=3');
+query_posts('cat=23,50,16 & posts_per_page=20');
 ?>
 
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

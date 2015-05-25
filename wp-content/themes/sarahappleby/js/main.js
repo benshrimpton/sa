@@ -1,3 +1,109 @@
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if( isMobile.any() )  {
+   console.log("is mobile");
+}
+else {
+   console.log("is no mobile");
+}
+function goInstafeed() {
+  if( $('#instagram-feed').length){
+  var feed = new Instafeed({
+/*
+       get: 'tagged',
+      tagName: 'makeup',
+      clientId: '0de749b50dee4bc58c50fd716567ee04',
+*/
+  
+      get: 'user',
+      userId: 11696583,
+      accessToken: '11696583.850066e.fb4d778871ec4c67bc657374fb6ce721',
+
+      sortBy: 'most-recent',
+      target: 'instagram-feed',
+      template: '<li class="touchcarousel-item"><a href="{{link}}" target="_blank"><img class="img-responsive" src="{{image}}" alt=""></a></li>',
+      resolution: 'thumbnail',
+      limit: 16,
+      after: function() {
+        doTouchCarousel();
+      }
+  });
+  feed.run();
+  }
+}
+
+
+function goInstafeedPage() {
+  if( $('#instagram-page').length){
+  var loadButton = $('#instagram-load-more');
+  console.log("instagram page feed start")
+  var feed = new Instafeed({
+/*
+      get: 'tagged',
+      tagName: 'makeup',
+      clientId: '9465ec57105c4ea08beeb8b9e413bbdc',
+*/
+      get: 'user',
+      userId: 11696583,
+      accessToken: '11696583.850066e.fb4d778871ec4c67bc657374fb6ce721',
+
+      sortBy: 'most-recent',
+      target: 'instagram-page',
+      template: '<div class="col-xs-4 col-sm-3 instagram-item"><a href="{{link}}" target="_blank"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span><img class="img-responsive" src="{{image}}" alt=""><div class="insta-meta"></div></a></div>',
+      resolution: 'low_resolution',
+      limit: 24,
+      after: function() {
+        // disable button if no more results to load
+        if ( !this.hasNext() ) {
+          loadButton.setAttribute('disabled', 'disabled');
+        }
+      }
+  });
+  // bind the load more button
+  $(document).on('click', loadButton, function() {
+    feed.next();
+  });
+  
+  feed.run();
+  } //end if
+}
+
+
+function doTouchCarousel() {
+    console.log("touch carosuel start")
+    $("#owl-demo").touchCarousel({
+        //pagingNav: false,
+        snapToItems: false,
+        itemsPerMove: 4,
+        scrollToLast: false,
+        loopItems: true,
+        scrollbar: false
+    });
+    $("#owl-demo").addClass('loaded')
+}
+
+
+
+
 //add bkg image support
 $.waitForImages.hasImgProperties = ['backgroundImage'];
 function fadeBkgImg(){
@@ -20,6 +126,7 @@ function clearEmptySpans() {
   });
 }
 
+/*
 function goOwl(){
   if ($("#owl-demo").length) {
     $("#owl-demo").owlCarousel({
@@ -29,11 +136,12 @@ function goOwl(){
     });
   }
 }
+*/
 function resizeHomeSlide() {
   console.log("resizeHomeSlide")
   if ($('#homepage-gallery').length) {
     var theWidth = $('#homepage-gallery').width();
-    var theHeight = theWidth / 2.4;
+    var theHeight = theWidth / 3;
     $('#homepage-gallery').height(theHeight);
   } 
 }
@@ -49,10 +157,11 @@ function resizeMainFolioSolo() {
   if ( $('#single-folio').length ) {
     console.log("resizeMainFolioSolo")
     var pageHeight = $(window).height();
-    var headHeight = $('.main-header').height() + 0;
+    var headHeight = $('.main-header').height();
     var dif = pageHeight - headHeight;
     console.log(pageHeight,headHeight,dif)
     $('#single-folio').height(dif);
+    goRoyalFolio();
   } 
 }
 
@@ -186,11 +295,11 @@ function goMasonryArticles(){
 $(document).on('click', '.toggle-search',function(e){
   e.preventDefault();
   $('.search-wrap').toggleClass('open');
-  $('.search-wrap input[type="search"]').trigger('focus')
+  $('.search-wrap input[type="search"]').focus()
 });
 
 //Ajax loaded galleries
-$(document).on('click', '.folio-thumb a',function(e){
+$(document).on('click', '.folio-thumb a.folio-link',function(e){
   e.preventDefault();
   var newUrl = $(this).attr('href');
   $('#ajax-folio').fadeIn(200, function(){
@@ -222,10 +331,13 @@ function pjaxComplete() {
   goRoyalHomepage();
   goMasonry();
   goMasonryArticles();
-  goOwl();
-  goRoyalFolio();
+  //goOwl();
+  //goRoyalFolio();
   clearEmptySpans();
   fadeBkgImg();
+  resizeMainFolioSolo();
+  goInstafeed();
+  goInstafeedPage(); 
 }
 pjax.connect({
   'useClass' : 'pjax',

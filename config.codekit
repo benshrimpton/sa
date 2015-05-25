@@ -34429,7 +34429,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/css\/nprogress.less",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/css\/nprogress.css",
@@ -34449,7 +34449,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/css\/owlcarousel.less",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/css\/owlcarousel.css",
@@ -34928,6 +34928,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/instafeed.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/instafeed.min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/instafeed.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/jquery.waitforimages.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -34994,6 +35005,150 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/black-and-white-skin\/black-and-white-skin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/black-and-white-skin\/black-and-white-skin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/black-and-white-skin\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1766,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/black-and-white-skin\/sprite.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/black-and-white-skin\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grab.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grab.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grab.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grabbing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2889,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grabbing.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grabbing.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grey-blue-skin\/grey-blue-skin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grey-blue-skin\/grey-blue-skin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grey-blue-skin\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3506,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grey-blue-skin\/sprite.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/grey-blue-skin\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/jquery.touchcarousel-1.1.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/jquery.touchcarousel-1.1.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/jquery.touchcarousel-1.1-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/jquery.touchcarousel-1.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/jquery.touchcarousel-1.1.min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/jquery.touchcarousel-1.1.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/minimal-light-skin\/minimal-light-skin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/minimal-light-skin\/minimal-light-skin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/minimal-light-skin\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1864,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/minimal-light-skin\/sprite.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/minimal-light-skin\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/three-d-skin\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2564,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/three-d-skin\/sprite.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/three-d-skin\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/three-d-skin\/three-d-skin.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/three-d-skin\/three-d-skin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/touchcarousel.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/touchcarousel.less",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/touchcarousel\/touchcarousel.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/wp-content\/themes\/sarahappleby\/page-about.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -35026,6 +35181,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/page-contact.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/sarahappleby\/page-instagram-feed.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/page-instagram-feed.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

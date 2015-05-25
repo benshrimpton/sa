@@ -1,4 +1,13 @@
 <?
+  
+  function SearchFilter($query) {
+if ($query->is_search) {
+$query->set('post_type', 'post');
+}
+return $query;
+}
+
+
   //all site functions.
 
 /*remove p tags from aroudn images
@@ -67,7 +76,7 @@ register_nav_menus( array(
 ));
 
 
-
+add_filter('pre_get_posts','SearchFilter');
 add_action( 'init', 'create_post_type' );
 add_filter('the_content', 'filter_ptags_on_images');
 //add featured image support to custom post types

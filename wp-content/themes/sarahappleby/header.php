@@ -34,14 +34,14 @@
   <div class="row top-inner">
     
       <menu class="social-links pull-left">
-        <a href="/blog" target="_blank">&#xe027;</a>
-        <a href="/blog" target="_blank">&#xe086;</a>
-        <a href="/blog" target="_blank">&#xe100;</a>
-        <a href="/blog" target="_blank">&#xe064;</a>
+        <a href="https://www.facebook.com/sarah.appleby" target="_blank">&#xe027;</a>
+        <a href="https://twitter.com/oksarahappleby" target="_blank">&#xe086;</a>
+        <a href="https://instagram.com/oksarahappleby/" target="_blank">&#xe100;</a>
+<!--         <a href="/blog" target="_blank">&#xe064;</a> -->
       </menu>
       
       <div class="toggle-search pull-right">
-        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <div class="glyphicon glyphicon-search" aria-hidden="true"></div>
       </div>
       
   </div>

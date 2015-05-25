@@ -34,7 +34,7 @@
 <div class="clear"></div>
 
 <div class="blog-lovin-cta">
-  <a href="http://bloglovin.com" target="_blank">
+  <a href="https://www.bloglovin.com/blogs/sarah-appleby-blog-7335823" target="_blank">
     <span class="icon glyphicon glyphicon-plus-sign"><span>PLUS</span></span>
     <span class="text">Follow me<br> on Bloglovin</span>
     <div class="clear"></div>
@@ -71,14 +71,6 @@
     <span class="instagram-icon">&#xe300;</span>
     <span class="text">Follow On Instagram</span>
     <div class="clear"></div>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>
-    <div class="clear"></div>
+    <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xat1/t51.2885-19/10844072_379218778918161_1263391292_a.jpg"/>    <div class="clear"></div>
   </a>
 </div>

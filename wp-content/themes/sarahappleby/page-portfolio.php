@@ -5,16 +5,16 @@
   <div class="row" id="portfolio-grid">
   <?php query_posts('post_type=portfolios, & posts_per_page=24'); ?>
   <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  	<figure class="col-md-4 folio-thumb">
+  	<figure class="col-sm-4 folio-thumb">
     	<div class="inner">
     
         <? the_post_thumbnail('large');  ?>
     	
       	<figcaption class="meta">
-      	  <a href="<? the_permalink(); ?>">
+      	 
       	  <div class="table">
             <div class="table-cell">
-              <h2><? the_title(); ?></h2>
+              <h2> <a href="<? the_permalink(); ?>" class="folio-link"><? the_title(); ?></a></h2>
               <menu class="share">
                 <a href="http://www.facebook.com/sharer.php?u=<? the_permalink(); ?>" target="_blank">&#xe027;</a>
                 <a href="http://twitter.com/share?url=<? the_permalink(); ?>&text=<? the_title(); ?>"  target="_blank">&#xe086;</a>

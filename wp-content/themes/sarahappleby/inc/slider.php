@@ -12,34 +12,38 @@ $image = $images[0];
 <?php endwhile; endif;  ?>
 <?php wp_reset_query(); ?>
 </section>
-<?php /*
+
   <div class="instgram-feed-wrapper">
     <div class="instgram-feed-inner container">
       <div class="instagram-feed-notice">
-        <h3>What Sarah has been up to</h3>
-        <a href="" target"_blank">Follow on Bloglovin</a>
+        <h3>What Sarah has been up to?</h3>
+        <a href="https://www.bloglovin.com/blogs/sarah-appleby-blog-7335823" target="_blank">Follow on Bloglovin</a>
       </div>
       <div class="instagram-feed-carousel">
-        <div id="owl-demo">
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
-          <div class="item"><img src="http://placehold.it/120x120" alt="Owl Image"></div>
+        <div id="owl-demo" class="touchcarousel black-and-white">
+          <ul class="touchcarousel-container" id="instagram-feed">
+          <!--
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
+          -->
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  */ ?>
+ 
 </section>
