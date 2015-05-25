@@ -228,7 +228,7 @@ function pjaxComplete() {
   fadeBkgImg();
 }
 pjax.connect({
-  //'useClass' : 'pjax',
+  'useClass' : 'pjax',
   'container': 'pjax-content',
   'beforeSend': function(e) {
     //$('#loader').show();

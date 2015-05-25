@@ -131,7 +131,7 @@ a:hover, a:focus, a:active {
       transition: all ease .3s;
       transform: translateY(20px);
       text-align: left;
-      border: solid 1px @gold;
+      border: solid 1px fade(@gold, 50%);
       &:before {
         content: "";
         width: 20px;
@@ -144,8 +144,8 @@ a:hover, a:focus, a:active {
         left: 50%;
         border: none;
         margin: 0 0 0 -10px;
-        border-left: solid 1px fade(@gold, 90%);
-        border-top: solid 1px fade(@gold, 90%);
+        border-left: solid 1px fade(@gold, 50%);
+        border-top: solid 1px fade(@gold, 50%);
       }
       li {
         display: block;
