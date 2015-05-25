@@ -1,22 +1,23 @@
 //add bkg image support
 $.waitForImages.hasImgProperties = ['backgroundImage'];
-
 function fadeBkgImg(){
   var imgWrap = $('.bio-img');
-  imgWrap.waitForImages(function(){
-    console.log("loaded");
-    $(this).css({
-      'opacity':'1'
-    })
-  });
+  if(imgWrap .length){
+    imgWrap.waitForImages(function(){
+      console.log("loaded");
+      $(this).css({
+        'opacity':'1'
+      });
+    });
+  }
 }
 
 function clearEmptySpans() {
   $('span').each(function() {
     var $this = $(this);
     if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
-        $this.remove();
-});
+      $this.remove();
+  });
 }
 
 function goOwl(){
@@ -33,7 +34,7 @@ function resizeHomeSlide() {
   if ($('#homepage-gallery').length) {
     var theWidth = $('#homepage-gallery').width();
     var theHeight = theWidth / 2.4;
-    $('#homepage-gallery').height(theHeight).css('border', 'solid 2px black');
+    $('#homepage-gallery').height(theHeight);
   } 
 }
 function resizeMainFolioAjax() {
@@ -217,7 +218,7 @@ $(window).on('resize', function(){
 // PJAX COMPLETE
 
 function pjaxComplete() {
-  $('#loader').hide();
+  NProgress.done();
   goRoyalHomepage();
   goMasonry();
   goMasonryArticles();
@@ -227,15 +228,20 @@ function pjaxComplete() {
   fadeBkgImg();
 }
 pjax.connect({
-  'useClass' : 'pjax',
+  //'useClass' : 'pjax',
   'container': 'pjax-content',
   'beforeSend': function(e) {
-    $('#loader').show();
+    //$('#loader').show();
+    NProgress.start();
   },
   'complete': function() {
     pjaxComplete();
+    //$('#loader').hide();
+     
   }
 });
+//$(document).on('pjax:start', function() { NProgress.start(); });
+//$(document).on('pjax:end',   function() { NProgress.done();  });
 
 //call it all on DOM ready
 pjaxComplete(); 

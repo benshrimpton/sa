@@ -1,9 +1,9 @@
 <menu class="sidebar-menu">
 	<ul>
-  	<li><a href="/bio/">WHO IS SARAH?</a></li>
-  	<li><a href="/category/use/">USE</a></li>
-  	<li><a href="/category/work/">WORK</a></li>
-  	<li><a href="/category/live/">LIVE</a></li>
+  	<li><a href="/bio/" class="pjax">WHO IS SARAH?</a></li>
+  	<li><a href="/category/use/" class="pjax">USE</a></li>
+  	<li><a href="/category/work/" class="pjax">WORK</a></li>
+  	<li><a href="/category/live/" class="pjax">LIVE</a></li>
 	</ul>
 </menu>
 <div class="tags-wrap">
@@ -49,7 +49,7 @@
   <?php while(have_posts()) : the_post(); ?>
   <article>
     <a href="<? the_permalink(); ?>" class="pjax">
-      <?php the_post_thumbnail(); ?>
+      <?php the_post_thumbnail('medium'); ?>
       <h4><?php the_title(); ?></h4>
       <p class="read-more">CONTINUE READING &raquo;</p>
     </a>
