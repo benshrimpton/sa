@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="container" id="single-folio-wrapper">
+<section class="container-fluid" id="single-folio-wrapper">
 <div id="single-folio" class="royalSlider rsDefault">
 <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	

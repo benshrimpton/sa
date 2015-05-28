@@ -25,6 +25,20 @@ if( isMobile.any() )  {
 else {
    console.log("is no mobile");
 }
+
+//add scrolle nav
+$(window).on('scroll', function() {
+  var scroll;
+  scroll = $(window).scrollTop();
+  if (scroll > 200) {
+    $('body').addClass('scrolled');
+  } else {
+    $('body').removeClass('scrolled');
+  }
+});
+
+
+
 function goInstafeed() {
   if( $('#instagram-feed').length){
   var feed = new Instafeed({
