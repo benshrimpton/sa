@@ -16,9 +16,9 @@
     <div class="col-sm-4 col-md-2 footer-col">
       <h4>CONNECT</h4>
       <ul class="social-links">
-        <li><a href="" target="_blank"><span>&#xe027;</span> FACEBOOK</a></li>
-        <li><a href="" target="_blank"><span>&#xe086;</span> TWITTER</a></li>
-        <li><a href="" target="_blank"><span>&#xe100;</span> INSTAGRAM</a></li>
+        <li><a href="https://www.facebook.com/sarah.appleby" target="_blank"><span>&#xe027;</span> FACEBOOK</a></li>
+        <li><a href="https://instagram.com/oksarahappleby/" target="_blank"><span>&#xe086;</span> TWITTER</a></li>
+        <li><a href="https://twitter.com/oksarahappleby" target="_blank"><span>&#xe100;</span> INSTAGRAM</a></li>
       </ul>
     </div>
   </div>

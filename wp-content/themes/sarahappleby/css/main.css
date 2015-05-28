@@ -8666,6 +8666,14 @@ a:active {
   opacity: 1;
 }
 /* ############# BIOGRAPHY ############# */
+.about-heading {
+  font-family: 'Conv_ACaslonPro-Italic';
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+  -webkit-font-smoothing: antialiased;
+}
 .bio-text {
   max-width: 640px;
   margin-bottom: 60px;
@@ -8684,7 +8692,7 @@ a:active {
 }
 @media (min-height: 600px) {
   .bio-img {
-    min-height: 300px;
+    min-height: 400px;
   }
 }
 @media (min-height: 700px) {

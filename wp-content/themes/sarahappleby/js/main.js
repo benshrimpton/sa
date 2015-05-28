@@ -171,7 +171,7 @@ function resizeMainFolioSolo() {
   if ( $('#single-folio').length ) {
     console.log("resizeMainFolioSolo")
     var pageHeight = $(window).height();
-    var headHeight = $('.main-header').height();
+    var headHeight = $('.main-header').height() + 100;
     var dif = pageHeight - headHeight;
     console.log(pageHeight,headHeight,dif)
     $('#single-folio').height(dif);

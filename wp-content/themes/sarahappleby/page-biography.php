@@ -18,6 +18,9 @@
 </section>
   
 <section class="container bio-text">
+        <h2 class="about-heading">
+        <?php the_title(); ?>
+        </h2>
         <? the_content();  ?>
   </section>      
   					
