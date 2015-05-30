@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 
-<section class="container">
+<section class="container-fluid">
   <div class="row" id="portfolio-grid">
   <?php query_posts('post_type=portfolios, & posts_per_page=24'); ?>
   <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  	<figure class="col-sm-4 folio-thumb">
+  	<figure class="col-sm-3 folio-thumb">
     	<div class="inner">
     
         <? the_post_thumbnail('large');  ?>

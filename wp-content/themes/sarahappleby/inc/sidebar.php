@@ -58,11 +58,13 @@
   <?php wp_reset_query(); ?>
 </div>
 
+<!--
 <div class="ad-banner sidebar-ad">
  <a hef="">
   <img src="http://placehold.it/300x600" class="">
 </a>
 </div>
+-->
 
 <div class="clear"></div>
 

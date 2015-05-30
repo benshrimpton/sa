@@ -16,7 +16,7 @@ $image = $images[0];
   <div class="instgram-feed-wrapper">
     <div class="instgram-feed-inner container">
       <div class="instagram-feed-notice">
-        <h3>What Sarah has been up to?</h3>
+        <h3>Currently Sarah</h3>
         <a href="https://www.bloglovin.com/blogs/sarah-appleby-blog-7335823" target="_blank">Follow on Bloglovin</a>
       </div>
       <div class="instagram-feed-carousel">
