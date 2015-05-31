@@ -34,8 +34,12 @@ body {
 	margin: 0;
 	padding: 0;
 	color: black;
-/* 	background: url(img/home-bkg.jpg) no-repeat center top; */
+	overflow-x: hidden;
 }
+body.overflowhidden {
+  overflow: hidden;
+}
+
 body.scrolled {
   margin-top: 50px;
 }
@@ -1212,4 +1216,64 @@ INSTAGRAM PAGE
     border: none;
      border: solid 1px transparent;
   }
+}
+
+.no-found {
+  padding: 100px 0;
+  font-size: 3em;
+}
+
+.portfolio-thumb {
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity ease .3s;
+  &:hover {
+    opacity: .5;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+#test-wrapper {
+  display: none;
+  transition: all ease .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+#test-wrapper.loaded{
+  position: fixed;
+  z-index: 999;
+  background: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  #test-wrapper-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  #test.royalSlider {
+      position: absolute;
+      top:50px;
+      right: 50px;
+      bottom: 50px;
+      left: 50px;
+      width: auto;
+      height: auto;
+    }
 }

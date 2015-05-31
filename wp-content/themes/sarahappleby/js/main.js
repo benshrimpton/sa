@@ -304,6 +304,59 @@ function goMasonryArticles(){
 }
 
 
+$(document).on('click', '.portfolio-thumb',function(e){
+  e.preventDefault();
+  var dataSrc = $(this).data('array');
+  
+  if( $(".rsOverflow").length ){
+    var slider = $(".royalSlider").data('royalSlider');
+    slider.destroy();
+  }
+  $("body").addClass('overflowhidden');
+  $("#test-wrapper").addClass('loaded');
+  
+  
+  //console.log(dataSrc);
+  var output="";
+
+  // for-in loop
+    for (var i in dataSrc) {
+    //console.log('<img class="rsImg" href="' + dataSrc[i] + '"/> ');
+      output+="<a class=\"rsImg\" href=\"" + dataSrc[i] + "\" /> ";
+    }
+
+
+    document.getElementById("test").innerHTML=output;
+    $("#test").imagesLoaded(function(){ 
+      $("#test").royalSlider({
+        addActiveClass: true,
+        controlNavigation: 'none',
+        imageScalePadding: 0,
+        slidesSpacing: 0,
+        numImagesToPreload: 2,
+        arrowsNavHideOnTouch: true,
+        keyboardNavEnabled: true,
+        fadeinLoadedSlide: true,
+        globalCaption: false,
+        globalCaptionInside: false,
+        transitionSpeed: 300,
+        autoPlay: {
+          // autoplay options go gere
+          pauseOnHover: false,
+          enabled: true,
+          delay: 3000
+        }
+      });
+    });  
+});
+
+//hide wrapper, remove RS
+$(document).on('click', '#test-wrapper-close',function(e){
+  $("#test-wrapper").removeClass('loaded');
+  $("body").removeClass('overflowhidden');
+});
+
+
 
 //do all event handler here
 $(document).on('click', '.toggle-search',function(e){
