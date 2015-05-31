@@ -7767,7 +7767,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  overflow-x: hidden;
+  /* 	overflow-x: hidden; */
 }
 body.overflowhidden {
   overflow: hidden;
