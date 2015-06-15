@@ -4,7 +4,7 @@
 
 function baw_theme_setup() {
   add_image_size( 'folio_thumb', 600, 450, true ); // (cropped)
-  add_image_size( 'extra_large', 1200, 1200 ); //soft proportional
+  add_image_size( 'extra_large', 1800, 1200 ); //soft proportional
 }
 
 // only search thru posts, not page or media. 

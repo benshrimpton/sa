@@ -10,8 +10,8 @@
   ?>
   
   <?php foreach( $images as $image ): ?>
-  <figure class="bio-img" style="background-image: url(<?php echo $image['sizes']['large']; ?>);">
-<!--     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"/> -->
+  <figure class="bio-img" style="background-image: url(<?php echo $image['sizes']['extra_large']; ?>);">
+<!--     <img src="<?php echo $image['sizes']['extra_large']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"/> -->
   </figure>
   
   <?php endforeach; ?>
