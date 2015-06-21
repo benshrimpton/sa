@@ -8975,9 +8975,25 @@ INSTAGRAM PAGE
   cursor: pointer;
   -webkit-transition: opacity ease .3s;
           transition: opacity ease .3s;
+  position: relative;
 }
-.portfolio-thumb:hover {
-  opacity: .5;
+.portfolio-thumb figcaption {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  right: 15px;
+  bottom: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  -webkit-transition: opacity ease .3s;
+          transition: opacity ease .3s;
+  opacity: 0;
+}
+.portfolio-thumb figcaption h2 {
+  margin-top: 35%;
+}
+.portfolio-thumb:hover figcaption {
+  opacity: 1;
 }
 .portfolio-thumb img {
   width: 100%;

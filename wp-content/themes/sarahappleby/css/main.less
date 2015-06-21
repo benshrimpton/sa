@@ -1228,8 +1228,25 @@ INSTAGRAM PAGE
   text-align: center;
   cursor: pointer;
   transition: opacity ease .3s;
+  position: relative;
+  figcaption {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  right: 15px;
+  bottom: 12px;
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  transition: opacity ease .3s;
+  opacity: 0;
+  h2 {
+    margin-top: 35%;
+  }
+  }
   &:hover {
-    opacity: .5;
+    figcaption {
+      opacity: 1;
+    }
   }
   img {
     width: 100%;

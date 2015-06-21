@@ -34,7 +34,7 @@ $query = new WP_Query( $args );
       
       <figure>
         <? the_post_thumbnail('folio_thumb');  ?>
-        <figcaption><? the_title(); ?></figcaption>
+        <figcaption><h2><? the_title(); ?></h2></figcaption>
       </figure>
      
   	</div>
