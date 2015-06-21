@@ -10,8 +10,10 @@
   ?>
   
   <?php foreach( $images as $image ): ?>
-  <figure class="bio-img" style="background-image: url(<?php echo $image['sizes']['extra_large']; ?>);">
-<!--     <img src="<?php echo $image['sizes']['extra_large']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"/> -->
+  <figure class="bio-img">
+    <img src="<?php echo $image['sizes']['extra_large']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"/>
+<!--    <img src="http://applebywebsite.s3.amazonaws.com/wp-content/uploads/2015/05/SARAH_APPLEBY_JANET_KIM_BIO_PHOTO-1800x600.jpeg" class="img-responsive"/> -->
+    
   </figure>
   
   <?php endforeach; ?>
