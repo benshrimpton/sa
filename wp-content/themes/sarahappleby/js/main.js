@@ -27,7 +27,7 @@ else {
 }
 
 function goFitVids(){
-  $(".fitvid").fitVids();
+  $(".fitvid, .post").fitVids();
 }
 
 //add scrolle nav
