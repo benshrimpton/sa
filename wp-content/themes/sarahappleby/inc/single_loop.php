@@ -10,10 +10,21 @@
       <h2><? the_title(); ?></h2>
 		</div>
 	</header>
-	<figure>
-		<? the_post_thumbnail('large');  ?>
-	</figure>
-	
+
+
+	<?php if(has_post_thumbnail()) :?>
+  	<figure>
+  		<? the_post_thumbnail('large');  ?>
+  	</figure>
+	<?php endif;?>
+  <?php if(the_field('video_embed')) :?>
+  	<figure class="fitvid">
+  	  <? the_field('video_embed'); ?>
+  	</figure>
+  <?php endif;?>
+  
+  
+  
 	<div class="excertp">
 		<?php the_content(); ?>
 		<p class="author-name-slug">
