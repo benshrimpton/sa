@@ -52,6 +52,7 @@ function fetchPostViews($postID){
 
 //CUTSOM POST TYPES
 function create_post_type() {
+/*
   register_post_type( 'portfolios',
     array(
       'labels' => array(
@@ -64,6 +65,7 @@ function create_post_type() {
       'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail' )
     )
   );
+*/
    register_post_type( 'homeslider',
     array(
       'labels' => array(
@@ -85,10 +87,23 @@ register_nav_menus( array(
 ));
 
 
+if ( ! function_exists( 'unregister_post_type' ) ) :
+function unregister_post_type( $post_type ) {
+    global $wp_post_types;
+    if ( isset( $wp_post_types[ $post_type ] ) ) {
+        unset( $wp_post_types[ $post_type ] );
+        return true;
+    }
+    return false;
+}
+endif;
+
+
 add_filter('pre_get_posts','SearchFilter');
 add_action( 'init', 'create_post_type' );
 add_filter('the_content', 'filter_ptags_on_images');
 //add featured image support to custom post types
 add_theme_support( 'post-thumbnails', array( 'post','portfolios') );
 add_action( 'after_setup_theme', 'baw_theme_setup' );
+unregister_post_type('portfolios');
 ?>
