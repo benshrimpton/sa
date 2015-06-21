@@ -26,6 +26,10 @@ else {
    console.log("is no mobile");
 }
 
+function goFitVids(){
+  $(".fitvid").fitVids();
+}
+
 //add scrolle nav
 $(window).on('scroll', function() {
   var scroll;
@@ -404,7 +408,8 @@ function pjaxComplete() {
   fadeBkgImg();
   resizeMainFolioSolo();
   goInstafeed();
-  goInstafeedPage(); 
+  goInstafeedPage();
+  goFitVids(); 
 }
 pjax.connect({
   'useClass' : 'pjax',

@@ -36,6 +36,7 @@
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/nprogress.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/instafeed.min.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/pjax-standalone.min.js"></script>
+<script src="<?php bloginfo( 'template_url' ); ?>/js/vendor/jquery.fitvids.js"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/main.js"></script>
 
 </div><!-- end pjax -->

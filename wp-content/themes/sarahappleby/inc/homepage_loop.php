@@ -25,12 +25,18 @@ query_posts('cat=23,50,16 & posts_per_page=20');
     </div>
     */ ?>	
 	</header>
-	<figure>
-		<a href="<? the_permalink(); ?>" class="pjax">
-			<? the_post_thumbnail('large');  ?>
-		</a>
-	</figure>
-	
+	<?php if(has_post_thumbnail()) :?>
+  	<figure>
+  		<a href="<? the_permalink(); ?>" class="pjax">
+  			<? the_post_thumbnail('large');  ?>
+  		</a>
+  	</figure>
+	<?php endif;?>
+  <?php if(the_field('video_embed')) :?>
+    	<figure class="fitvid">
+    	  <? the_field('video_embed'); ?>
+    	</figure>
+  <?php endif;?>
 	<div class="excertp">
 		<?php the_excerpt(); ?>
 		<p class="author-name-slug">

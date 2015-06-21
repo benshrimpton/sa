@@ -28129,6 +28129,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/jquery.fitvids.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/jquery.fitvids.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/sarahappleby\/js\/vendor\/jquery.fitvids-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-content\/themes\/sarahappleby\/js\/vendor\/jquery.waitforimages.js": {
 		"fileType": 64,
 		"ignore": 0,
