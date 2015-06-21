@@ -4,14 +4,16 @@
       <div class="footer-logo"></div>
     </div>
     <div class="col-sm-4 col-md-3 footer-col">
+      <!--
       <h4>CONTACT</h4>
       <p><a href="mailto:SARAH@SARAHAPPLEBY.COM">SARAH@SARAHAPPLEBY.COM</a></p>
-      <p>NEW YORK, NY</p>
+      <p>000 000 0000</p>
+      -->
     </div>
     <div class="col-sm-4 col-md-3 footer-col">
       <h4>BOOKINGS</h4>
       <p><a href="mailto:SARAH@SARAHAPPLEBY.COM">SARAH@SARAHAPPLEBY.COM</a></p>
-      <p>NE WYORK, NY</p>
+      <p>+1.917.488.2683</p>
     </div>
     <div class="col-sm-4 col-md-2 footer-col">
       <h4>CONNECT</h4>
