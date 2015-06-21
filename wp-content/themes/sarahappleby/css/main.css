@@ -8016,6 +8016,10 @@ a:active {
   margin-bottom: 40px;
   padding-bottom: 30px;
 }
+.post .fluid-width-video-wrapper,
+.post iframe {
+  margin-bottom: 12px;
+}
 .post header {
   margin-bottom: 20px;
   min-height: 70px;
