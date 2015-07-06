@@ -8020,6 +8020,12 @@ a:active {
 .post iframe {
   margin-bottom: 12px;
 }
+.post a {
+  color: #8d744c;
+}
+.post a:hover {
+  color: rgba(141, 116, 76, 0.5);
+}
 .post header {
   margin-bottom: 20px;
   min-height: 70px;
