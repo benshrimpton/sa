@@ -7,7 +7,7 @@ $images = get_field('images');
 $image = $images[0];
 ?>
 <?php foreach( $images as $image ): ?>
-<a href="<?php echo $image['sizes']['large']; ?>" class="rsImg"/></a>
+<a href="<?php echo $image['sizes']['extra_large']; ?>" class="rsImg"/></a>
 <?php endforeach; ?>
 <?php endwhile; endif;  ?>
 <?php wp_reset_query(); ?>
