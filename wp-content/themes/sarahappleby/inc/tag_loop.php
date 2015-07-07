@@ -5,11 +5,23 @@
       <span class="sub-title"><? the_field('sub_title'); ?></span>
       <h2><a href="<? the_permalink(); ?>" class="pjax"><? the_title(); ?></a></h2>
     </header>
-  	<figure>
-  		<a href="<? the_permalink(); ?>" class="pjax">
-  			<? the_post_thumbnail('large');  ?>
-  		</a>
-  	</figure>
+
+
+    <?php if(has_post_thumbnail()) :?>
+    <figure>
+      <a href="<? the_permalink(); ?>" class="pjax">
+        <? the_post_thumbnail('large');  ?>
+      </a>
+    </figure>
+    <?php endif;?>
+    <?php if(the_field('video_embed')) :?>
+      <figure class="fitvid">
+        <? the_field('video_embed'); ?>
+      </figure>
+    <?php endif;?>
+
+
+
   	
   	<div class="excertp">
   		<?php //the_excerpt(); ?>
