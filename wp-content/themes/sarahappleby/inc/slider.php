@@ -17,7 +17,18 @@ $image = $images[0];
     <div class="instgram-feed-inner container">
       <div class="instagram-feed-notice">
         <h3>Currently Sarah</h3>
-        <a href="instagram://user?username=oksarahappleby" target="_blank">Follow on Instagram</a>
+
+      <?php
+      $isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
+      $isiPhone = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPhone');
+      $isAndroid = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'Android');
+      ?>
+      <?php if( $isiPhone ||  $isAndroid ):?>
+      <a href="instagram://user?username=oksarahappleby" target="_blank">Follow on Instagram</a>
+      <?php else: ?>
+      <a href="https://instagram.com/oksarahappleby/" target="_blank">Follow on Instagram</a>
+      <?php endif; ?>  
+
       </div>
       <div class="instagram-feed-carousel">
         <div id="owl-demo" class="touchcarousel black-and-white">
