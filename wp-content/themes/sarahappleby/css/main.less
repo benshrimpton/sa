@@ -368,13 +368,14 @@ a:hover, a:focus, a:active {
 			font-size: 9px;
 			color: @gold;
 			font-family: 'p22_undergroundlight';
-			border-bottom: solid 1px fade(@gold, 40%);
+			/*border-bottom: solid 1px fade(@gold, 40%);*/
 			margin: 0 5px 0 0;
 			-webkit-transition: all ease .3s;
 			transition: all ease .3s;
 			&:hover {
-  			color: black;
+  			color: fade(@gold, 50%);
   			border-color: black;
+
 			}
 		}
 	}
@@ -419,8 +420,10 @@ a:hover, a:focus, a:active {
 	letter-spacing: 2px;
 	margin-bottom: 15px;
 	border-bottom: solid 1px white;	
+  transition: all ease .3s;
 	&:hover {
-	  border-bottom: solid 1px black;	
+    color: fade(@gold, 50%);
+	  /*border-bottom: solid 1px black;	*/
   }
 }
 	
@@ -697,7 +700,6 @@ a:hover, a:focus, a:active {
 		line-height: 22px;
 	}
 	a {
-		text-decoration: underline;
 		color: gold;
 		text-transform: uppercase;
 		font-family: 'p22_underground_probook';
@@ -715,7 +717,7 @@ a:hover, a:focus, a:active {
 		}
 		&:hover {
   		color: fade(@gold, 50%);
-  		border-color: fade(@gold, 50%);
+  		border-color: fade(@gold, 40%);
 		}
 	}
 	.see-more-tags {
@@ -871,7 +873,7 @@ a:hover, a:focus, a:active {
     }
   }
   .footer-logo {
-    width: 108px;
+    width: 129px;
     height: 129px;
     background: url(img/footer-logo.jpg) no-repeat 0 0;
   }
