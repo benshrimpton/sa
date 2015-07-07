@@ -8757,6 +8757,7 @@ a:active {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: .1em;
+  margin-bottom: 12px;
 }
 .no-results {
   font-family: 'p22_underground_probook';
