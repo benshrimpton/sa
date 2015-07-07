@@ -8838,7 +8838,8 @@ a:active {
   text-transform: uppercase;
 }
 .instgram-feed-wrapper .instagram-feed-notice a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgba(141, 116, 76, 0.5);
 }
 .instgram-feed-wrapper .instagram-feed-carousel {
   position: absolute;

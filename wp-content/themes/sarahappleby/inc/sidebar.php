@@ -1,7 +1,8 @@
 <menu class="sidebar-menu">
 	<ul>
 <!--   	<li><a href="/bio/" class="pjax">WHO IS SARAH?</a></li>
- -->  	<li><a href="/category/use/" class="pjax">USE</a></li>
+ --> 
+    <li><a href="/category/use/" class="pjax">USE</a></li>
   	<li><a href="/category/work/" class="pjax">WORK</a></li>
   	<li><a href="/category/live/" class="pjax">LIVE</a></li>
 	</ul>
