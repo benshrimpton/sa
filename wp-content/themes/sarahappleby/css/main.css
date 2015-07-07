@@ -8157,7 +8157,7 @@ a:active {
   font-size: 14px;
   letter-spacing: 2px;
   margin-bottom: 15px;
-  border-bottom: solid 1px white;
+  /*	border-bottom: solid 1px white;	*/
   -webkit-transition: all ease .3s;
           transition: all ease .3s;
 }
@@ -8395,12 +8395,13 @@ a:active {
   -webkit-transition: all ease .3s;
           transition: all ease .3s;
   display: block;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px rgba(141, 116, 76, 0.8);
   padding: 15px 0;
   color: black;
   letter-spacing: .1em;
-  font-family: 'p22_underground_probook';
   font-size: 26px;
+  font-family: 'p22_undergroundlight';
+  color: #8d744c;
 }
 .sidebar-menu ul li a:hover {
   color: silver;
