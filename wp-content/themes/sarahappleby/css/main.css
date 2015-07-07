@@ -8746,11 +8746,11 @@ a:active {
   margin-bottom: 30px;
 }
 .contact-wrapper p a {
-  text-decoration: underline;
-  color: gray;
+  /* text-decoration: underline;*/
+  color: #8d744c;
 }
 .contact-wrapper p a:hover {
-  color: silver;
+  color: rgba(141, 116, 76, 0.5);
 }
 .contact-wrapper h3 {
   font-family: 'p22_underground_probook';
