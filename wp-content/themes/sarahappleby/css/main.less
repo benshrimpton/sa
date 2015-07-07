@@ -623,7 +623,11 @@ a:hover, a:focus, a:active {
   }
 }
 .sidebar-menu {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+  span {
+  color: @gold;
+  font-family: 'p22_underground_probook';
+  }
 	@media(max-width: 991px) {
   	width: 45%;
   	float: left;
@@ -633,14 +637,15 @@ a:hover, a:focus, a:active {
 	ul {
 		li {
 			a {
+        .uppercase;
+        .transition-medium;
 				display: block;
 				border-bottom: solid 1px black;
 				padding: 15px 0;
 				color: black;
 				letter-spacing: .1em;
 				font-family: 'p22_underground_probook';
-				.uppercase;
-				.transition-medium;
+        font-size: 26px;
 				&:hover {
   				color: silver;
   				border-color: silver;

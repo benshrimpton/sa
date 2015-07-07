@@ -8376,7 +8376,10 @@ a:active {
   text-transform: uppercase;
 }
 .sidebar-menu {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.sidebar-menu span {
+  color: #8d744c;
 }
 @media (max-width: 991px) {
   .sidebar-menu {
