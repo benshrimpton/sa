@@ -35,9 +35,10 @@
   <div class="row top-inner">
     
       <menu class="social-links pull-left">
-        <a href="https://www.facebook.com/sarah.appleby" target="_blank">&#xe027;</a>
-        <a href="https://twitter.com/oksarahappleby" target="_blank">&#xe086;</a>
         <a href="https://instagram.com/oksarahappleby/" target="_blank">&#xe100;</a>
+        <a href="https://www.facebook.com/sarah.appleby" target="_blank">&#xe027;</a>
+        <a href="https://www.pinterest.com/oksarahappleby/" target="_blank">&#xe064;</a>
+        <a href="https://twitter.com/oksarahappleby" target="_blank">&#xe086;</a>
 <!--         <a href="/blog" target="_blank">&#xe064;</a> -->
       </menu>
       
