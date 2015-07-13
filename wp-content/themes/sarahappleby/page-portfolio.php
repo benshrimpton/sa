@@ -35,7 +35,7 @@
 
 <div id="ajax-folio">
 	<div class="ajax-folio-closer">
-		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+		<img src="<?php bloginfo( 'template_url' ); ?>/css/img/close_2.png" alt="close_2" width="20" height="20" />
 	</div>
 	<div class="inner"></div>
 </div>

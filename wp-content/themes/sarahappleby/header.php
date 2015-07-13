@@ -43,7 +43,7 @@
       
       <div class="toggle-search pull-right">
         <div>
-          <img src="<?php bloginfo( 'template_url' ); ?>/css/img/iconmonstr-magnifier-2-icon.svg" width="30">
+          <img src="<?php bloginfo( 'template_url' ); ?>/css/img/iconmonstr-magnifier-2-icon.svg" width="20">
         </div>
       </div>
       
@@ -75,26 +75,19 @@
 </ul>
 -->
 <?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?>
+</div> 
 </div>
- 
-</div>
-</header>
-
-
-
 
 
 <div class="search-wrap">
 <div class="toggle-search search-closer">
-<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+<img src="<?php bloginfo( 'template_url' ); ?>/css/img/close_2.png" alt="close_2" width="20" height="20">
 </div>
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
 </form>
 </div>
-
-
 </header>
 <div id="pjax-content">
 

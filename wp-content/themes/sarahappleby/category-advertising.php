@@ -65,7 +65,8 @@ var data_<? echo $count++ ?> = [
 
 <div id="test-wrapper">
   <div id="test-wrapper-close">
-    <div class="glyphicon glyphicon-remove"></div>
+		<img src="<?php bloginfo( 'template_url' ); ?>/css/img/close_2.png" alt="close_2" width="20" height="20" />
+
   </div>
   <div id="test" class="royalSlider rsDefault"></div>
 </div>

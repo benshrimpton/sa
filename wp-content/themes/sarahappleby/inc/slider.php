@@ -1,3 +1,8 @@
+<?php
+$isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
+$isiPhone = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPhone');
+$isAndroid = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'Android');
+?>
 <section class="slide-wrapper">
 <section id="homepage-gallery" class="royalSlider rsDefault">
 <?php query_posts('post_type=homeslider, & posts_per_page=1'); ?>
@@ -7,7 +12,13 @@ $images = get_field('images');
 $image = $images[0];
 ?>
 <?php foreach( $images as $image ): ?>
-<a href="<?php echo $image['sizes']['extra_large']; ?>" class="rsImg"/></a>
+
+  <?php if( $isiPhone ||  $isAndroid ):?>
+     <div class="slide"><a href="<?php echo $image['sizes']['large']; ?>" class="rsImg"/></a></div>
+  <?php else: ?>
+      <div class="slide"><a href="<?php echo $image['sizes']['extra_large']; ?>" class="rsImg"/></a></div>
+  <?php endif; ?>  
+ 
 <?php endforeach; ?>
 <?php endwhile; endif;  ?>
 <?php wp_reset_query(); ?>
@@ -18,11 +29,7 @@ $image = $images[0];
       <div class="instagram-feed-notice">
         <h3>Currently Sarah</h3>
 
-      <?php
-      $isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
-      $isiPhone = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPhone');
-      $isAndroid = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'Android');
-      ?>
+
       <?php if( $isiPhone ||  $isAndroid ):?>
       <a href="instagram://user?username=oksarahappleby" target="_blank">Follow on Instagram</a>
       <?php else: ?>
@@ -33,24 +40,7 @@ $image = $images[0];
       <div class="instagram-feed-carousel">
         <div id="owl-demo" class="touchcarousel black-and-white">
           <ul class="touchcarousel-container" id="instagram-feed">
-          <!--
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-            <li class="touchcarousel-item"><img src="http://placehold.it/120x120" alt="Owl Image"></li>
-          -->
+          <!-- ajax populate -->
           </ul>
         </div>
       </div>

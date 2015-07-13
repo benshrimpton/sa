@@ -157,11 +157,11 @@ function goOwl(){
 */
 function resizeHomeSlide() {
   console.log("resizeHomeSlide")
-  if ($('#homepage-gallery').length) {
-    var theWidth = $('#homepage-gallery').width();
+//   if ($('#homepage-gallery').length) {
+    var theWidth = $(window).width();
     var theHeight = theWidth / 3;
     $('#homepage-gallery').height(theHeight);
-  } 
+//   } 
 }
 function resizeMainFolioAjax() {
   if ( $('#single-folio').length ) {
@@ -185,18 +185,27 @@ function resizeMainFolioSolo() {
 
 
 
-
+//resizeHomeSlide();
 function goRoyalHomepage() {
   if ($('#homepage-gallery').length) {
-    resizeHomeSlide();
+    
+     var isFit;
+    if($(window).width() <= 600) {
+      isFit = 'fill';
+    }
+    else {
+      isFit = 'fill';
+    }
+    
+    
   	var $royalSlider = $('#homepage-gallery');
     $royalSlider.royalSlider({
     	addActiveClass: true,
-      imageScaleMode: 'fill',
+      imageScaleMode: isFit,
       //autoScaleSlider: true,
       //slidesOrientation: 'vertical',
       controlNavigation: 'none',
-      //imageScalePadding: 40,
+      imageScalePadding: 0,
       slidesSpacing: 0,
       navigateByClick: false,
       numImagesToPreload: 2,
@@ -208,7 +217,7 @@ function goRoyalHomepage() {
       globalCaption: false,
       globalCaptionInside: false,
       transitionSpeed: 300,
-      sliderDrag: false,
+      //sliderDrag: false,
       autoPlay: {
         // autoplay options go gere
         pauseOnHover: false,
@@ -216,6 +225,7 @@ function goRoyalHomepage() {
         delay: 3000
         }
     });
+    /*
     var slider = $royalSlider.data('royalSlider');
     slider.ev.on('rsAfterSlideChange', function(event) {
       console.log("rsAfterSlideChange")
@@ -223,6 +233,7 @@ function goRoyalHomepage() {
     slider.slides[0].holder.on('rsAfterContentSet', function() {
       console.log("rsAfterContentSet")
     });
+    */
  }//end if
 } //end function
 
@@ -366,6 +377,7 @@ $(document).on('click', '#test-wrapper-close',function(e){
 $(document).on('click', '.toggle-search',function(e){
   e.preventDefault();
   $('.search-wrap').toggleClass('open');
+  //$('.main-header').toggleClass('hidden');
   $('.search-wrap input[type="search"]').focus()
 });
 

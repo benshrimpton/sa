@@ -7767,6 +7767,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
+  height: 100%;
   /* 	overflow-x: hidden; */
 }
 body.overflowhidden {
@@ -7806,6 +7807,11 @@ a:active {
   /* 	border: solid 1px #ddd; */
   line-height: 35px;
   padding: 0 20px;
+}
+@media (max-width: 600px) {
+  .top-inner {
+    margin-bottom: 10px;
+  }
 }
 .logo {
   width: 342px;
@@ -7867,6 +7873,12 @@ a:active {
   margin-left: -8px;
   line-height: 50px;
 }
+@media (max-width: 600px) {
+  #menu-main-menu li {
+    line-height: 35px;
+    margin-left: 0px;
+  }
+}
 #menu-main-menu li a {
   display: inline-block;
   padding: 0 30px;
@@ -7876,6 +7888,12 @@ a:active {
 }
 #menu-main-menu li a:hover {
   color: silver;
+}
+@media (max-width: 600px) {
+  #menu-main-menu li a {
+    margin-left: 0px;
+    padding: 0 15px;
+  }
 }
 #menu-main-menu li ul {
   position: absolute;
@@ -7893,6 +7911,11 @@ a:active {
           transform: translateY(20px);
   text-align: left;
   border: solid 1px rgba(141, 116, 76, 0.5);
+}
+@media (max-width: 600px) {
+  #menu-main-menu li ul {
+    left: -45px;
+  }
 }
 #menu-main-menu li ul:before {
   content: "";
@@ -8008,7 +8031,7 @@ a:active {
 }
 @media (max-width: 991px) {
   .blog-col {
-    padding-right: 0px;
+    padding-right: 15px;
   }
 }
 .post {
@@ -8030,6 +8053,11 @@ a:active {
   margin-bottom: 20px;
   min-height: 70px;
   position: relative;
+}
+@media (max-width: 991px) {
+  .post header {
+    /*       min-height: 50px; */
+  }
 }
 .post header time {
   text-transform: uppercase;
@@ -8191,9 +8219,24 @@ a:active {
   position: relative;
   margin-bottom: 120px;
 }
+@media (max-width: 800px) {
+  .slide-wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .slide-wrapper {
+    margin-bottom: 60px;
+  }
+}
 #homepage-gallery {
   width: 100%;
-  min-height: 300px !important;
+  min-height: 125px;
+}
+@media (max-width: 600px) {
+  #homepage-gallery {
+    height: 125px;
+  }
 }
 #single-folio {
   width: 100%;
@@ -8219,6 +8262,7 @@ a:active {
   bottom: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.9);
+  background: white;
   z-index: 45000;
   -webkit-transition: all ease .3s;
           transition: all ease .3s;
@@ -8241,11 +8285,11 @@ a:active {
 .search-wrap form {
   display: block;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 90%;
 }
 @media (max-width: 800px) {
   .search-wrap form {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 .search-wrap form input[type="search"] {
@@ -8263,6 +8307,13 @@ a:active {
       -ms-transform: translateY(400px);
           transform: translateY(400px);
   font-family: 'p22_underground_probook';
+}
+@media (max-width: 600px) {
+  .search-wrap form input[type="search"] {
+    display: block;
+    width: 90%;
+    margin: 40px auto;
+  }
 }
 .search-wrap form input[type="submit"] {
   border: none;
@@ -8368,6 +8419,11 @@ a:active {
     max-width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .right-sidebar {
+    padding-left: 15px;
+  }
+}
 .right-sidebar h3 {
   font-family: 'p22_underground_proregular';
   font-size: 14px;
@@ -8416,6 +8472,12 @@ a:active {
     float: left;
     width: 45%;
     margin-right: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .popular-posts {
+    margin-right: 15px;
+    width: 100%;
   }
 }
 .popular-posts img {
@@ -8795,6 +8857,14 @@ a:active {
   left: 0;
   right: 0;
 }
+@media (max-width: 600px) {
+  .instgram-feed-wrapper {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+}
 .instgram-feed-wrapper .instgram-feed-inner {
   background: white;
   min-height: 155px;
@@ -8884,6 +8954,11 @@ a:active {
 }
 .touchcarousel .arrow-holder.right {
   background: white;
+}
+@media (max-width: 600px) {
+  .touchcarousel .arrow-holder.right {
+    display: none;
+  }
 }
 .touchcarousel.black-and-white .arrow-icon.right:before {
   content: "MORE";
@@ -9063,5 +9138,5 @@ INSTAGRAM PAGE
 }
 .toggle-search {
   cursor: pointer;
-  argin-top: 7px;
+  margin-top: 7px;
 }
