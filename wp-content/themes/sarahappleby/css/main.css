@@ -9061,3 +9061,7 @@ INSTAGRAM PAGE
   width: auto;
   height: auto;
 }
+.toggle-search {
+  cursor: pointer;
+  argin-top: 7px;
+}

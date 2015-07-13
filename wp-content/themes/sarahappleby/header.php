@@ -28,7 +28,6 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-  
 <header class="main-header">
 <div class="container-fluid top-row">
   
@@ -43,7 +42,9 @@
       </menu>
       
       <div class="toggle-search pull-right">
-        <div class="glyphicon glyphicon-search" aria-hidden="true"></div>
+        <div>
+          <img src="<?php bloginfo( 'template_url' ); ?>/css/img/iconmonstr-magnifier-2-icon.svg" width="30">
+        </div>
       </div>
       
   </div>
